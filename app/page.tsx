@@ -6,7 +6,7 @@ import { PrimaryButton } from "@/components/primary-button";
 
 import Image from "next/image";
 import heroBG from "@/public/images/hero-bg.webp";
-import heroFG from "@/public/images/hero-fg.png";
+import heroFG from "@/public/images/hero-fg.webp";
 import yleadIcon from "@/public/icons/ylead-icon.png";
 import icon from "@/public/icons/icon.svg";
 import { ScrollAnimation } from "@/components/scroll-animation";
