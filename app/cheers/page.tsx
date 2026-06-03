@@ -20,7 +20,8 @@ import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 
-export default function Theme() {
+export default function Cheers() {
+  const prefix = process.env.NODE_ENV === 'production' ? '/y-lead-2026' : '';
   return (
     <div className="min-h-screen flex flex-col bg-background-primary">
       <ScrollAnimation />
@@ -33,6 +34,7 @@ export default function Theme() {
 
 
         <div className="flex items-center justify-center w-screen aspect-square max-w-3xl m-auto">
+          
           <video
             autoPlay
             muted
@@ -40,7 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
-            <source src="/images/zephyr-animation.mp4" type="video/mp4" />
+            <source src={`${prefix}/images/zephyr-animation.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

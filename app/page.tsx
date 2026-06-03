@@ -12,6 +12,7 @@ import icon from "@/public/icons/icon.svg";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
+import chairspic from "@/public/images/chairs-pic.png";
 
 export default function Home() {
   return (
@@ -119,6 +120,52 @@ export default function Home() {
           </div>
         }
       />
+
+      {/* Chairs note */}
+      <SplitSection 
+        left={
+          <div className="relative h-full aspect-256/169">
+            <GlowingImage image={chairspic} />
+          </div>
+        }
+        right={
+          <div className="flex flex-col items-start">
+            <h1 data-animate className="xl:text-7xl text-6xl font-bold text-font-primary w-full">
+              Chairpersons’ Address
+            </h1>
+          </div>
+        }
+
+        addClassName="bg-background-primary -mb-32"
+      />
+      {/* Chairs note */}
+      <SplitSection 
+        left={
+          <div className="flex flex-col items-start border-t border-b border-background-secondary">
+            <div data-animate className="text-2xl text-font-primary w-full py-8">
+              <p>Dear participants,</p><br/>
+
+              <p>Welcome to Y.LEAD 2026, Zephyr: Shaping the winds of change. We are excited to have all of you join us for four meaningful days of learning, growth, and connection through this seminar.</p><br/>
+
+              <p>Like a zephyr, change may seem subtle at first, yet it possesses the power to shape the world around us. Through our subtheme, AERIS, we hope to broaden your perspectives and deepen your understanding of the evolving social, technological, and global landscape we live in today.</p><br/>
+
+              <p>Through team-based activities, we hope all of you can strengthen your leadership skills, and grow both as individuals and as a team.</p><br/>
+
+              <p>At Y.LEAD, we believe that leadership is not defined solely by titles or positions, but by the willingness to step up, support others, and create positive impact in our communities. Every one of us holds the potential to be a changemaker, and we hope you enter this seminar with an open mind, a curious spirit, and the courage to try.</p><br/>
+
+              <p>Gathering leaders with diverse backgrounds, we encourage everyone to learn from one another, build innovative solutions together, and forge lasting friendships.</p><br/>
+
+              <p>To our future changemakers, we are looking forward to seeing you at Y.LEAD!</p><br/>
+
+              <p>Warmest regards,<br/>
+              Lee Boyan, Phoebe Tan En Minn, Ong Yue Yu Valerie, Devendran Venkatesh</p>
+            </div>
+          </div>
+        }
+
+        addClassName="bg-background-primary -mt-16"
+      />
+
 
       {/* footer */}
       <Footer />

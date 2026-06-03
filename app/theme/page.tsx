@@ -21,14 +21,14 @@ import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 
 export default function Theme() {
-  const prefix = process.env.NODE_ENV === 'production' ? '/y-lead-2026/public' : '';
+  const prefix = process.env.NODE_ENV === 'production' ? '/y-lead-2026' : '';
   return (
     <div className="min-h-screen flex flex-col bg-background-primary">
       <ScrollAnimation />
 
       {/* Hero */}
       <div className="flex h-screen w-screen self-center self-justify">
-        <div className="absolute w-screen z-10 opacity-0 animate-[fade-in_0.6s_ease-out_3.5s_forwards]">
+        <div className="absolute w-screen z-10 opacity-0 animate-[fade-in_0.6s_ease-out_forwards]">
           <Navbar/>
         </div>
 
@@ -42,7 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
-            <source src="/y-lead-2026/images/zephyr-animation.mp4" type="video/mp4" />
+            <source src={`${prefix}/images/zephyr-animation.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
