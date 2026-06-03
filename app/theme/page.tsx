@@ -42,7 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
-            <source src="/y-lead-2026/public/images/zephyr-animation.mp4" type="video/mp4" />
+            <source src="/y-lead-2026/images/zephyr-animation.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
