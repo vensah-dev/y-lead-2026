@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar = () => {
   const navItems = [
@@ -31,7 +32,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
-            <a 
+            <Link 
               key={item.name}
               href={item.href}
               className={`text-sm ${
@@ -41,7 +42,7 @@ const Navbar = () => {
               }`}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -70,7 +71,7 @@ const Navbar = () => {
           
           <div className="flex flex-col items-center space-y-8">
             {navItems.map((item) => (
-              <a 
+              <Link
                 key={item.name}
                 href={item.href}
                 className={`text-2xl ${
@@ -81,7 +82,7 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
