@@ -5,7 +5,7 @@ import { SecondaryButton } from "@/components/secondary-button";
 import { PrimaryButton } from "@/components/primary-button";
 
 import Image from "next/image";
-import heroBG from "@/public/images/hero-bg.png";
+import heroBG from "@/public/images/hero-bg.jpeg";
 import heroFG from "@/public/images/hero-fg.png";
 import yleadIcon from "@/public/icons/ylead-icon.png";
 import icon from "@/public/icons/icon.svg";
