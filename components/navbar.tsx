@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
+import icon from '@/public/icons/icon.svg';
+
 const Navbar = () => {
   const navItems = [
     { name: 'About', href: '/' },
@@ -22,7 +24,7 @@ const Navbar = () => {
       <div className="h-22 mx-4 flex justify-between items-center">
         <div className="relative h-full aspect-square flex items-center">
           <Image 
-            src="/icons/icon.svg" 
+            src={icon}
             alt="Y.LEAD Logo" 
             fill
             className="mr-2"
