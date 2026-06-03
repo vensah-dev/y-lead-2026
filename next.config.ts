@@ -2,7 +2,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // basePath: '/carbide-robotics',
+  basePath: '/y-lead-2026',
   images: {
     unoptimized: true,
   },
