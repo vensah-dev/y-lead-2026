@@ -1,65 +1,127 @@
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
+import { SecondaryButton } from "@/components/secondary-button";
+import { PrimaryButton } from "@/components/primary-button";
+
 import Image from "next/image";
+import heroBG from "@/public/images/hero-bg.png";
+import heroFG from "@/public/images/hero-fg.png";
+import yleadIcon from "@/public/icons/ylead-icon.png";
+import icon from "@/public/icons/icon.svg";
+import { ScrollAnimation } from "@/components/scroll-animation";
+import SplitSection from "@/components/split-section";
+import GlowingImage from "@/components/glowing-image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen flex flex-col bg-background-primary">
+      <ScrollAnimation />
+
+      {/* Hero */}
+      <div className="relative h-screen w-screen self-center self-justify">
+
+        <div className="absolute z-0 h-screen w-screen">
+          <Image src={heroBG} quality={100} alt="Hero Background" fill className="object-cover object-top self-start"/>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <section className="absolute items-start justify-center xl:pt-[4%] lg:pt-[10%] md:pt-[30%] max-lg:landscape:pt-[88px] pt-[calc(88px+5vh)] text-center h-full w-full flex">
+        
+          <div className="flex w-full justify-center z-10 opacity-90">
+              <h1 
+                className="text-center w-full text-[20vw] font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
+              >
+                Y.LEAD 2026
+              </h1>
+          </div>
+
+        </section>
+
+        <div className="absolute z-10 h-screen w-screen">
+          <Image src={heroFG} quality={100} alt="Hero Foreground" fill className="object-cover object-top self-start"/>
         </div>
-      </main>
+
+        <div className="relative z-50">
+          <Navbar/>
+        </div>
+      </div>
+
+      {/* about */}
+      <SplitSection 
+        left={
+          <div className="relative h-full aspect-square">
+            <GlowingImage image={yleadIcon} />
+          </div>
+        }
+        right={
+          <div className="flex flex-col">
+            <h1 
+              className="text-6xl font-bold mb-4 text-font-primary"
+              data-animate
+            >
+              Y.LEAD 2026
+            </h1>
+            <h2 
+              className="text-justify text-weight-light text-font-secondary"
+              data-animate
+            >
+              Since 2013, the Y.LEAD (Youth. Leverage Educate Actuate Develop) Seminar has been
+              one of River Valley High School's signature programmes, attracting more than 600
+              participants from both local and overseas schools each year. The objective of the
+              seminar is to empower young people aged 15 to 17 years old to create positive change
+              in their community by equipping them with values-based leadership skills.
+            </h2>
+          </div>
+        }
+        
+        addClassName="bg-background-primary"
+
+      />
+
+      {/* theme */}
+      <SplitSection 
+        left={
+          <div className="relative h-full aspect-256/169">
+            <GlowingImage image={icon} />
+          </div>
+        }
+        right={
+          <div className="flex flex-col items-start">
+            <h1 data-animate className="text-6xl font-bold mb-4 text-font-primary">
+              Theme
+            </h1>
+
+            <h1 data-animate className="text-[1.7rem] font-semibold mb-4 text-font-secondary">
+              Zephyr: Shaping the Winds of Change
+            </h1>
+
+            <h2 
+              className="text-justify text-weight-light text-font-secondary"
+              data-animate
+            >
+              Y.LEAD aims to nurture our 
+              participants who not only lead teams effectively but also think critically 
+              about real-world challenges. Zephyr reflects this by encouraging participants 
+              to recognise these evolving and uncertain “winds” and take ownership in 
+              understanding and shaping them through informed dialogue and action as they 
+              embark on their own leadership journeys.
+
+            </h2>
+
+            <div className="pt-8 xl:max-w-sm">
+              <PrimaryButton 
+                text={
+                  <>More about the Theme</>
+                } 
+                href="/theme" 
+              />
+            </div>
+          </div>
+        }
+      />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 }

@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
+@import "./animations.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-primary:   #EDF4F8;
+  --background-secondary: #DAE9F1;
+  --background-tertiary:  #C8DEEA;
+
+  --font-primary:         #0E1D25;
+  --font-secondary:       #152B37;
+  --font-tertiary:        #1C3A4A;
+
+  --accent-primary:       #80B3CE;
+  --accent-pale:          #9AC2D8;
+  --accent-dark:          #2B576E;
+
+  --accent-secondary:     #C8CE4A;
+  --accent-secondary-pale:#DADF86;
+  --accent-secondary-dark:#4E5016;
+
+  --footer-bg:            #0E1D25;
+  --footer-font:          #DAE9F1;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  /* colours */
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+
+
+  --color-font-primary: var(--font-primary);
+  --color-font-secondary: var(--font-secondary);
+  --color-font-tertiary: var(--font-tertiary);
+
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-pale: var(--accent-pale);
+  --color-accent-dark: var(--accent-dark);
+
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-pale: var(--accent-secondary-pale);
+  --color-accent-secondary-dark: var(--accent-secondary-dark);
+
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-font: var(--footer-font);
+
+  /* fonts */
+  --font-sans: var(--font-antonio);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html{
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scroll-behavior: auto;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-primary);
+  color: var(--font-primary);
+  font-family: var(--font-antonio), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
