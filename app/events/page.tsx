@@ -94,6 +94,8 @@ export default function Events() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
+      <div className="max-w-7xl mx-auto">
+
       {/* ==================== DAY 1 SECTION (BLUE) ==================== */}
       <div className="text-center mb-10 mt-32 text-font-primary flex flex-col items-center gap-4">
         <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
@@ -241,6 +243,7 @@ export default function Events() {
             color="blue"
           />
         ))}
+      </div>
       </div>
 
       <Footer />

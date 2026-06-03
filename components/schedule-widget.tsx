@@ -12,20 +12,22 @@ export default function ScheduleWidget({ time, activities, color = 'blue' }: Sch
   const timebgColor = color === 'green' ? 'bg-green-300/75' : color === 'purple' ? 'bg-purple-300/75' : 'bg-blue-300';
 
   return (
-    <div className={`w-full max-w-xl ${bgColor ? bgColor : ''} backdrop-blur-sm rounded-full p-2 flex items-center gap-6`}>
-      {/* Time Capsule */}
-      <div className={`${timebgColor ? timebgColor : ''}  text-font-primary font-bold text-xl py-3 px-8 rounded-full min-w-[120px] text-center tracking-wide`}>
-        {time}
-      </div>
-      
-      {/* Activities Text */}
-      <div className="flex flex-col text-font-primary font-semibold uppercase tracking-wider justify-center pr-6">
-        {activities.map((activity, index) => (
-          <p key={index} className="text-sm md:text-base leading-tight">
-            {activity}
-          </p>
-        ))}
-      </div>
+    <div className="xl:max-w-7xl w-full xl:px-16 px-8">
+        <div className={`w-full ${bgColor ? bgColor : ''} backdrop-blur-sm rounded-full p-2 flex items-center gap-6`}>
+          {/* Time Capsule */}
+          <div className={`${timebgColor ? timebgColor : ''}  text-font-primary font-bold text-xl py-3 px-8 rounded-full min-w-[120px] text-center tracking-wide`}>
+            {time}
+          </div>
+        
+          {/* Activities Text */}
+          <div className="flex flex-col text-font-primary font-semibold uppercase tracking-wider justify-center pr-6">
+            {activities.map((activity, index) => (
+              <p key={index} className="text-sm md:text-base leading-tight">
+                {activity}
+              </p>
+            ))}
+          </div>
+        </div>
     </div>
   );
 }
