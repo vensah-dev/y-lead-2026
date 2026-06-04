@@ -13,7 +13,7 @@ const CheerDetailView = (
   return (
     <div>
         <Navbar />
-        <div className="relative h-full max-w-7xl w-wrap mx-auto mt-32">
+        <div className="relative h-full max-w-7xl w-wrap mx-auto mt-32 p-8">
             <h1 className="text-7xl font-bold mb-8">
                 {cheer.title}
             </h1>
