@@ -39,7 +39,7 @@ export function AllCheers({ cheers }: any) {
   }
 
   return (
-    <div className="flex-col max-w-7xl mx-auto my-32">
+    <div className="flex-col max-w-7xl mx-auto my-32 p-8">
 
       <p className='text-7xl w-full text-center text-white100 font-bold mb-12'>All Cheers</p>
 

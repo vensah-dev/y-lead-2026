@@ -14,7 +14,7 @@ export const cheers = [
       content: "(Stomp right leg 1x, clap 2x; stomp left leg 1x, clap 1x)\n\nBrr, it’s cold in here!\nThere must be some __ in the atmosphere!\nBrr, it’s cold in here!\nThere must be some __ in the atmosphere!\n\n(Swing arms from right to left at chest level, hands clenched in a fist)\nOh, way oh, way oh\n\n(Push out hands and open them fully, close them back x3 from left to right)\nIce ice ice!\n\n(Swing arms from right to left guy at chest level, hands clenched in a fist)\nOh, way oh, way oh\n\n(Push out hands and open them fully, close them back x3 from left to right)\nIce ice ice!"
   },
   {
-      key: "win the war",
+      key: "win-the-war",
       image: "/images/blue-bin.jpg",
       title: "Win The War",
       content: "Repeat after me!\n(Repeat after you!)\nDo what I do!\n(Do what you do!)\nSay what I say!\n(Say what you say!)\n\nEarly morning late at night!\n(Early morning late at night!)\nY.LEAD Y.LEAD out to fight!\n(Y.LEAD Y.LEAD out to fight!)\nStay united work as one!\n(Stay united work as one!)\nWe will win the war this time!\n(We will win the war this time!)\n\n(Stomp foot and punch fists out horizontally at an increasing speed after every part)\n\nWe will win the war!\nWe will win the war!\nWe will win the war!\nOne more time go!\n\nWe will win the war!\nWe will win the war!\nWe will win the war!\nOne last time go!\n(Louder and faster)\n\nWe will win the war!\nWe will win the war!\nWe will win the war!\nY.LEAD win the war!\n(Loudest and fastest)"
