@@ -11,7 +11,7 @@ import { cheers } from '@/lib/cheers';
 import CheerThumbnail from './cheers-thumbnail';
 
 export function AllCheers({ cheers }: any) {
-  const cheersAlphabetical = JSON.parse(JSON.stringify(cheers)).sort((a, b) => a.title.localeCompare(b.title))
+  const cheersAlphabetical = JSON.parse(JSON.stringify(cheers)).sort((a: any, b: any) => a.title.localeCompare(b.title))
 
   const [filteredCheers, setFilteredCheers] = useState(cheersAlphabetical);
   const [inputValue, setInputValue] = useState("")
