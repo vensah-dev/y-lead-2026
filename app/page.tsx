@@ -130,7 +130,7 @@ export default function Home() {
         }
         right={
           <div className="flex flex-col items-start">
-            <h1 data-animate className="xl:text-7xl text-6xl font-bold text-font-primary w-full">
+            <h1 data-animate className="xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primary w-full">
               Chairpersons’ Address
             </h1>
           </div>

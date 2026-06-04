@@ -31,13 +31,13 @@ export default function Events() {
     { time: '12 00', activities: ['Lunch'] },
     { time: '13 00', activities: ['Y.Lead Dance'] },
     { time: '14 40', activities: ['Wind Surfer'] },
-    { time: '16 20', activities: ['Blow Wind Blow and Wind Chimes Briefing', 'Admin Briefing', 'Debrief'] },
+    { time: '16 20', activities: ['Blow Wind Blow and Wind Chimes Briefing, Admin Briefing, Debrief'] },
   ];
 
   // Day 2 Dataset - Track 1 (Green Theme)
   const scheduleDataGreen = [
     { time: '08 00', activities: ['Morning Assembly'] },
-    { time: '08 20', activities: ['Admin Briefing', 'Cross Winds Briefing', 'Group Time'] },
+    { time: '08 20', activities: ['Admin Briefing, Cross Winds Briefing, Group Time'] },
     { time: '09 00', activities: ['Blow Wind Blow'] },
     { time: '12 40', activities: ['Lunch'] },
     { time: '13 40', activities: ['Wind Chimes Preparation'] },
@@ -49,7 +49,7 @@ export default function Events() {
   // Day 2 Dataset - Track 2 (Purple Theme)
   const scheduleDataPurple = [
     { time: '08 00', activities: ['Morning Assembly'] },
-    { time: '08 20', activities: ['Admin Briefing', 'Leadership Collaboration Briefing', 'Group Time'] },
+    { time: '08 20', activities: ['Admin Briefing, Leadership Collaboration Briefing, Group Time'] },
     { time: '09 20', activities: ['Cross Winds'] },
     { time: '12 40', activities: ['Lunch'] },
     { time: '13 40', activities: ['Wind Chimes Preparation'] },
@@ -60,22 +60,22 @@ export default function Events() {
 
   // Day 3 Dataset - Track 1 (Blue Theme)
   const scheduleDataBlueDay3 = [
-    { time: '08 00', activities: ['Morning Assembly', 'Group Time + Admin Briefing'] },
+    { time: '08 00', activities: ['Morning Assembly, Group Time + Admin Briefing'] },
     { time: '09 00', activities: ['Cross Winds'] },
     { time: '12 40', activities: ['Lunch'] },
     { time: '13 40', activities: ['Wind Breaker'] },
     { time: '16 20', activities: ['Y.Lead Display'] },
-    { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
+    { time: '17 20', activities: ['Admin Briefing, Debrief'] },
   ];
 
   // Day 3 Dataset - Track 2 (Green Theme)
   const scheduleDataGreenDay3 = [
-    { time: '08 00', activities: ['Morning Assembly', 'Group Time + Admin Briefing'] },
+    { time: '08 00', activities: ['Morning Assembly, Group Time + Admin Briefing'] },
     { time: '09 00', activities: ['Blow Wind Blow'] },
     { time: '12 40', activities: ['Lunch'] },
     { time: '13 40', activities: ['Wind Breaker'] },
     { time: '16 20', activities: ['Y.Lead Display'] },
-    { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
+    { time: '17 20', activities: ['Admin Briefing, Debrief'] },
   ];
 
   // Day 4 Dataset - Track 1 (Third separate Blue Theme extracted from your image)
@@ -83,7 +83,7 @@ export default function Events() {
     { time: '08 00', activities: ['Morning Assembly'] },
     { time: '08 20', activities: ['Wind Breaker'] },
     { time: '11 20', activities: ['Lunch + Freshen up for Commencement'] },
-    { time: '12 40', activities: ['Reflection + Group Time', 'Photobooth'] },
+    { time: '12 40', activities: ['Reflection + Group Time, Photobooth'] },
     { time: '14 20', activities: ['Commencement Celebration'] },
     { time: '16 20', activities: ['Participants Dismissal'] },
   ];

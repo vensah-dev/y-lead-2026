@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: 'About', href: '/' },
     { name: 'Theme', href: '/theme' },
     { name: 'Events', href: '/events' },
-    // { name: 'Cheers', href: '/cheers' },
+    { name: 'Cheers', href: '/cheers' },
     // { name: 'Media', href: '/media' },
   ];
 
