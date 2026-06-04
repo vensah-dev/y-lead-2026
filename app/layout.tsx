@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Event - Modern Template",
-  description: "Modern event template with pastel colors",
+  title: "Y.LEAD 2026",
+  description: "Youth Leverage Educate Actuate Develop Seminar 2026",
 };
 
 export default function RootLayout({
