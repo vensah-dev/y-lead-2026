@@ -78,7 +78,7 @@ export default async function cheersDetailPage({ params }:{ params: any }) {
                 ) : (
                     // <cheersDetailView cheer={cheer} />
                     <div>
-                        <div className="h-screen">
+                        <div className="min-h-screen">
                             <CheerDetailView cheer={cheer} />
                         </div>
                          <Footer />

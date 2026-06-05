@@ -13,7 +13,7 @@ const CheerDetailView = (
   return (
     <div>
         <Navbar />
-        <div className="overflow-hidden relative h-screen">
+        <div className="overflow-hidden relative min-h-screen">
 
             <div className={`h-[250vw] w-[250vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 grid xl:grid-cols-20 xl:grid-rows-20 grid-cols-10 grid-rows-10 gap-4 ${cheer.bgColor} opacity-25 origin-center rotate-45`}>
                 {Array.from({ length: 400 }).map((_, i) => {

@@ -20,7 +20,7 @@ import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 import ScheduleWidget from "@/components/schedule-widget";
 
-export default function Events() {
+export default function Programmes() {
   const prefix = process.env.NODE_ENV === 'production' ? '' : '';
   
   // Day 1 Dataset (Blue Theme)
