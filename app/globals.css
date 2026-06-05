@@ -46,8 +46,9 @@
   --color-footer-font: var(--footer-font);
 
   /* fonts */
-  --font-sans: var(--font-antonio);
+  --font-sans: var(--font-sen);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-antonio);
 }
 
 html{
@@ -59,6 +60,6 @@ html{
 body {
   background: var(--background-primary);
   color: var(--font-primary);
-  font-family: var(--font-antonio), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-sen), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }

@@ -30,7 +30,7 @@ export default function Home() {
         
           <div className="flex w-full justify-center z-10 opacity-90">
               <h1 
-                className="text-center w-full text-[20vw] font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
+                className="font-display text-center w-full text-[20vw] font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
               >
                 Y.LEAD 2026
               </h1>
@@ -57,13 +57,13 @@ export default function Home() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-4 text-font-primary"
+              className="font-display text-6xl font-bold mb-4 text-font-primary"
               data-animate
             >
               Y.LEAD 2026
             </h1>
-            <h2 
-              className="text-justify text-weight-light text-font-secondary"
+            <h3 
+              className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
               Since 2013, the Y.LEAD (Youth. Leverage Educate Actuate Develop) Seminar has been
@@ -71,7 +71,7 @@ export default function Home() {
               participants from both local and overseas schools each year. The objective of the
               seminar is to empower young people aged 15 to 17 years old to create positive change
               in their community by equipping them with values-based leadership skills.
-            </h2>
+            </h3>
           </div>
         }
         
@@ -88,11 +88,11 @@ export default function Home() {
         }
         right={
           <div className="flex flex-col items-start">
-            <h1 data-animate className="text-6xl font-bold mb-4 text-font-primary">
+            <h1 data-animate className="font-display text-6xl font-bold mb-4 text-font-primary">
               Theme
             </h1>
 
-            <h1 data-animate className="text-[1.7rem] font-semibold mb-4 text-font-secondary">
+            <h1 data-animate className="text-[1.7rem] font-display font-semibold mb-4 text-font-secondary">
               Zephyr: Shaping the Winds of Change
             </h1>
 
@@ -130,7 +130,7 @@ export default function Home() {
         }
         right={
           <div className="flex flex-col items-start">
-            <h1 data-animate className="xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primary w-full">
+            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primary w-full">
               Chairpersons’ Address
             </h1>
           </div>

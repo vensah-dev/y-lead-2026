@@ -82,8 +82,8 @@ export const cheers = [
   },
   {
       key: "bilibanjang",
-      emoji: "🍓",
-      bgColor: "bg-pink-500/20",
+      emoji: "🍡",
+      bgColor: "bg-blue-500/20",
 
       title: "Bilibanjang",
       content: "(Everyone to link shoulders and lean forward when moving)\n(At the start of every word, step right leg forward on the floor)\n\nBilibanjang bilibanjang!\nBilibanjang bilibanjang!\nNagaheyah nagahowah\nBilibanjang!\nNagaheyah nagahowah\nBilibanjang!"

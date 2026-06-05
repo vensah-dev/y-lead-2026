@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link 
               key={item.name}
               href={item.href}
-              className={`text-sm ${
+              className={`font-display text-sm ${
                 pathname === item.href 
                   ? 'text-accent-primary' 
                   : 'text-gray-600 hover:text-accent-primary transition-colors'

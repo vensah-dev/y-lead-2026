@@ -59,10 +59,10 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-6 text-font-primary"
               data-animate
             >
-              Arts, Culture, & Heritage
+              Arts, Culture & Heritage
             </h1>
             <h2 
               className="text-justify text-weight-light text-font-secondary"
@@ -90,13 +90,13 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-6 text-font-primary"
               data-animate
             >
               Environment & Sustainability
             </h1>
             <h2 
-              className="text-justify text-weight-light text-font-secondary"
+              className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
               <ul className="list-disc list-inside space-y-3">
@@ -122,13 +122,13 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-6 text-font-primary"
               data-animate
             >
               Regional and Global Affairs
             </h1>
             <h2 
-              className="text-justify text-weight-light text-font-secondary"
+              className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
               <ul className="list-disc list-inside space-y-3">
@@ -153,13 +153,13 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-6 text-font-primary"
               data-animate
             >
               Innovation & AI
             </h1>
             <h2 
-              className="text-justify text-weight-light text-font-secondary"
+              className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
               <ul className="list-disc list-inside space-y-3">
@@ -186,13 +186,13 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-6 text-font-primary"
               data-animate
             >
               Social Compact
             </h1>
             <h2 
-              className="text-justify text-weight-light text-font-secondary"
+              className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
               <ul className="list-disc list-inside space-y-3">

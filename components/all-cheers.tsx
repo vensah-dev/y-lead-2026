@@ -41,9 +41,9 @@ export function AllCheers({ cheers }: any) {
   return (
     <div className="flex-col max-w-7xl mx-auto my-32 p-8">
 
-      <p className='text-7xl w-full text-center text-white100 font-bold mb-12'>All Cheers</p>
+      <p className='font-display text-7xl w-full text-center text-white100 font-bold mb-12'>All Cheers</p>
 
-      <div className='flex flex-row items-center mb-12 bg-background-secondary rounded-full overflow-clip'>
+      <div className='flex flex-row items-center mb-12 bg-background-secondary has-[:focus]:ring-2 has-[:focus]:ring-font-primary/25 has-[:focus]:brightness-103 rounded-full overflow-clip'>
 
         <div className='px-6'>
           <FaMagnifyingGlass className='w-5 h-5 fill-font-secondary' />

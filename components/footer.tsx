@@ -23,7 +23,7 @@ const Footer = () => {
 
           <div className="h-12 flex flex-col justify-center px-4">
             
-            <p className="text-footer-font text-bold text-2xl">
+            <p className="text-footer-font text-bold text-2xl font-display">
               Y.LEAD 2026
             </p>
 

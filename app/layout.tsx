@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Antonio, Geist_Mono } from "next/font/google";
+import { Antonio, Geist_Mono, Sen } from "next/font/google";
 import "./globals.css";
 
 const antonio = Antonio({
   variable: "--font-antonio",
   subsets: ["latin"],
 });
+
+const sen = Sen({
+  subsets: ["latin"],
+  variable: "--font-sen",
+});
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${antonio.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${antonio.variable} ${geistMono.variable} ${sen.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-gray-900">{children}</body>
     </html>

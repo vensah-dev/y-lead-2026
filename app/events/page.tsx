@@ -107,7 +107,7 @@ export default function Events() {
 
       {/* ==================== DAY 1 SECTION (BLUE) ==================== */}
       <div className="text-center mb-10 mt-32 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 1
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
@@ -130,7 +130,7 @@ export default function Events() {
 
       {/* ==================== DAY 2 SECTION (GREEN) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 2 - Fam L + E
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
@@ -153,7 +153,7 @@ export default function Events() {
 
       {/* ==================== DAY 2 SECTION (PURPLE) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 2 - Fam A + D
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
@@ -176,7 +176,7 @@ export default function Events() {
 
       {/* ==================== DAY 3 SECTION (BLUE) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 3 - Fam L + E
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
@@ -199,7 +199,7 @@ export default function Events() {
 
       {/* ==================== DAY 3 SECTION (GREEN) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 3 - Fam A + D
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
@@ -222,7 +222,7 @@ export default function Events() {
 
       {/* ==================== DAY 4 SECTION (BLUE) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
+        <h1 className="font-display text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
           Day 4
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
