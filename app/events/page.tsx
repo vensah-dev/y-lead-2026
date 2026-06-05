@@ -21,7 +21,7 @@ import GlowingImage from "@/components/glowing-image";
 import ScheduleWidget from "@/components/schedule-widget";
 
 export default function Events() {
-  const prefix = process.env.NODE_ENV === 'production' ? '/y-lead-2026' : '';
+  const prefix = process.env.NODE_ENV === 'production' ? '' : '';
   
   // Day 1 Dataset (Blue Theme)
   const scheduleDataBlue = [

@@ -21,7 +21,7 @@ import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 
 export default function Theme() {
-  const prefix = process.env.NODE_ENV === 'production' ? '/y-lead-2026' : '';
+  const prefix = process.env.NODE_ENV === 'production' ? '' : '';
   return (
     <div className="min-h-screen flex flex-col bg-background-primary">
       <ScrollAnimation />
