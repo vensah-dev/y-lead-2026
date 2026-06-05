@@ -32,6 +32,8 @@ export default function Events() {
     { time: '13 00', activities: ['Y.Lead Dance'] },
     { time: '14 40', activities: ['Wind Surfer'] },
     { time: '16 20', activities: ['Blow Wind Blow and Wind Chimes Briefing, Admin Briefing, Debrief'] },
+    { time: '17 00', activities: ['Dismissal'] },
+
   ];
 
   // Day 2 Dataset - Track 1 (Green Theme)
@@ -44,18 +46,21 @@ export default function Events() {
     { time: '14 20', activities: ['Wind Chimes'] },
     { time: '15 40', activities: ['Group Time + Reflection'] },
     { time: '16 40', activities: ['Admin Briefing + Debrief'] },
+    { time: '17 00', activities: ['Dismissal'] },
+
   ];
 
   // Day 2 Dataset - Track 2 (Purple Theme)
   const scheduleDataPurple = [
     { time: '08 00', activities: ['Morning Assembly'] },
     { time: '08 20', activities: ['Admin Briefing, Leadership Collaboration Briefing, Group Time'] },
-    { time: '09 20', activities: ['Cross Winds'] },
+    { time: '09 00', activities: ['Cross Winds'] },
     { time: '12 40', activities: ['Lunch'] },
     { time: '13 40', activities: ['Wind Chimes Preparation'] },
     { time: '14 20', activities: ['Wind Chimes'] },
     { time: '15 40', activities: ['Group Time + Reflection'] },
     { time: '16 40', activities: ['Admin Briefing + Debrief'] },
+    { time: '17 00', activities: ['Dismissal'] },
   ];
 
   // Day 3 Dataset - Track 1 (Blue Theme)
@@ -66,6 +71,8 @@ export default function Events() {
     { time: '13 40', activities: ['Wind Breaker'] },
     { time: '16 20', activities: ['Y.Lead Display'] },
     { time: '17 20', activities: ['Admin Briefing, Debrief'] },
+    { time: '17 40', activities: ['Dismissal'] },
+
   ];
 
   // Day 3 Dataset - Track 2 (Green Theme)
@@ -76,6 +83,7 @@ export default function Events() {
     { time: '13 40', activities: ['Wind Breaker'] },
     { time: '16 20', activities: ['Y.Lead Display'] },
     { time: '17 20', activities: ['Admin Briefing, Debrief'] },
+    { time: '17 40', activities: ['Dismissal'] },
   ];
 
   // Day 4 Dataset - Track 1 (Third separate Blue Theme extracted from your image)
@@ -85,7 +93,8 @@ export default function Events() {
     { time: '11 20', activities: ['Lunch + Freshen up for Commencement'] },
     { time: '12 40', activities: ['Reflection + Group Time, Photobooth'] },
     { time: '14 20', activities: ['Commencement Celebration'] },
-    { time: '16 20', activities: ['Participants Dismissal'] },
+    { time: '16 20', activities: ['Dismissal'] },
+
   ];
 
   return (
@@ -122,14 +131,11 @@ export default function Events() {
       {/* ==================== DAY 2 SECTION (GREEN) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
         <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
-          Day 2
+          Day 2 - Fam L + E
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
           08-07-2026
         </p>
-        {/* <p className="text-2xl font-medium tracking-wide">
-          Fam <span className="text-font-primary font-bold">L</span>+<span className="text-font-primary font-bold">E</span>
-        </p> */}
       </div>
 
       {/* Day 2 Green Widgets Container */}
@@ -148,14 +154,11 @@ export default function Events() {
       {/* ==================== DAY 2 SECTION (PURPLE) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
         <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
-          Day 2
+          Day 2 - Fam A + D
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
           08-07-2026
         </p>
-        {/* <p className="text-2xl font-medium tracking-wide">
-          Fam <span className="text-pink-400 font-bold">A</span>+<span className="text-blue-500 font-bold">D</span>
-        </p> */}
       </div>
 
       {/* Day 2 Purple Widgets Container */}
@@ -174,14 +177,11 @@ export default function Events() {
       {/* ==================== DAY 3 SECTION (BLUE) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
         <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
-          Day 3
+          Day 3 - Fam L + E
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
           09-07-2026
         </p>
-        {/* <p className="text-2xl font-medium tracking-wide">
-          Fam <span className="text-red-500 font-bold">L</span>+<span className="text-green-500 font-bold">E</span>
-        </p> */}
       </div>
 
       {/* Day 3 Blue Widgets Container */}
@@ -200,14 +200,11 @@ export default function Events() {
       {/* ==================== DAY 3 SECTION (GREEN) ==================== */}
       <div className="text-center mb-10 text-font-primary flex flex-col items-center gap-4">
         <h1 className="text-5xl md:text-6xl font-bold tracking-wide drop-shadow-md">
-          Day 3
+          Day 3 - Fam A + D
         </h1>
         <p className="text-4xl md:text-5xl font-semibold tracking-widest mt-2 text-font-primary/75 drop-shadow-sm">
           09-07-2026
         </p>
-        {/* <p className="text-2xl font-medium tracking-wide">
-          Fam <span className="text-pink-400 font-bold">A</span>+<span className="text-blue-500 font-bold">D</span>
-        </p> */}
       </div>
 
       {/* Day 3 Green Widgets Container */}

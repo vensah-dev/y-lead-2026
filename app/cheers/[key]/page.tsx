@@ -10,6 +10,7 @@ import Head from 'next/head';
 import CheerDetailView from '@/components/cheer-detail-view';
 
 import { AllCheers } from '@/components/all-cheers';
+import Footer from '@/components/footer';
 
 export const generateStaticParams = async () => {
 
@@ -23,39 +24,39 @@ export const generateStaticParams = async () => {
     }))
 };
 
-export async function generateMetadata({params}:{params: any}) {
-    const cheer = cheers.find((p) => p.key === params.key)
+// export async function generateMetadata({params}:{params: any}) {
+//     const cheer = cheers.find((p) => p.key === params.key)
 
-    return {
-        title: `${cheer ? `${cheer.title} | cheers ` : "All cheers"}`,
-        icons: {
-            icon: `${cheer ? cheer.image : "/icons/favicon.ico"}`,
-        },
-        openGraph: {
-            title: cheer ? `${cheer.title} | cheers | Venkatesh` : "All cheers | cheers | Venkatesh",
-            description: cheer ? cheer.title.replace(/[\n\r\t]/gm, "") : "Check out all the cheers I was involved in over the years!",
-            url: "https://vensah.dev/y-lead-2026/cheers/" + params.key,
-            type: "website",
-            logo: 'https://vensah.dev/y-lead-2026/icons/open-graph-image.png',
-            images: [
-                (
-                    cheer ?
-                        ({
-                            width: 1080,
-                            height: 600,
-                            url: "https://vensah.dev/y-lead-2026" + cheer.image,
-                        })
-                        :
-                        ({
-                            width: 1900,
-                            height: 1900,
-                            url: `https://vensah.dev/y-lead-2026/icons/open-graph-image.png`,
-                        })
-                )
-            ]
-        },
-    };
-}
+//     return {
+//         title: `${cheer ? `${cheer.title} | cheers ` : "All cheers"}`,
+//         icons: {
+//             icon: `${cheer ? cheer.emoji : "/icons/favicon.ico"}`,
+//         },
+//         openGraph: {
+//             title: cheer ? `${cheer.title} | cheers | Venkatesh` : "All cheers | cheers | Venkatesh",
+//             description: cheer ? cheer.title.replace(/[\n\r\t]/gm, "") : "Check out all the cheers I was involved in over the years!",
+//             url: "https://vensah.dev/y-lead-2026/cheers/" + params.key,
+//             type: "website",
+//             logo: 'https://vensah.dev/y-lead-2026/icons/open-graph-image.png',
+//             images: [
+//                 (
+//                     cheer ?
+//                         ({
+//                             width: 1080,
+//                             height: 600,
+//                             url: "https://vensah.dev/y-lead-2026" + cheer.image,
+//                         })
+//                         :
+//                         ({
+//                             width: 1900,
+//                             height: 1900,
+//                             url: `https://vensah.dev/y-lead-2026/icons/open-graph-image.png`,
+//                         })
+//                 )
+//             ]
+//         },
+//     };
+// }
 
 
 export default async function cheersDetailPage({ params }:{ params: any }) {
@@ -77,8 +78,12 @@ export default async function cheersDetailPage({ params }:{ params: any }) {
                 ) : (
                     // <cheersDetailView cheer={cheer} />
                     <div>
-                        <CheerDetailView cheer={cheer} />
+                        <div className="h-screen">
+                            <CheerDetailView cheer={cheer} />
+                        </div>
+                         <Footer />
                     </div>
+
                 )
             }
         </>
