@@ -142,7 +142,7 @@ export default function Home() {
       <SplitSection 
         left={
           <div className="flex flex-col items-start border-t border-b border-background-secondary">
-            <div data-animate className="text-2xl text-font-primary w-full py-8">
+            <div data-animate className="text-base text-font-primary w-full py-8">
               <p>Dear participants,</p><br/>
 
               <p>Welcome to Y.LEAD 2026, Zephyr: Shaping the winds of change. We are excited to have all of you join us for four meaningful days of learning, growth, and connection through this seminar.</p><br/>
