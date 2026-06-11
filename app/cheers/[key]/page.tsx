@@ -81,7 +81,7 @@ export default async function cheersDetailPage({ params }:{ params: any }) {
                         <div className="min-h-screen">
                             <CheerDetailView cheer={cheer} />
                         </div>
-                         <Footer />
+                        <Footer />
                     </div>
 
                 )
