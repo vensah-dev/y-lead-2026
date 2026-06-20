@@ -33,7 +33,7 @@ export default function Theme() {
         </div>
 
 
-        <div className="flex items-center justify-center w-screen aspect-square max-w-3xl m-auto">
+        <div className="flex items-center justify-center h-screen aspect-square max-w-3xl m-auto">
           
           <video
             autoPlay
@@ -42,7 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
-            <source src={`${prefix}/images/zephyr-animation.mp4`} type="video/mp4" />
+            <source src={`${prefix}/images/zephyr-animation.mov`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
