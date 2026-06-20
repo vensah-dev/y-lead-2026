@@ -22,8 +22,8 @@ export default function Home() {
       {/* Hero */}
       <div className="relative h-screen w-screen self-center self-justify">
 
-        <div className="absolute z-0 h-screen w-screen">
-          <Image src={heroBG} quality={100} alt="Hero Background" fill className="object-cover object-top self-start"/>
+        <div className="absolute z-0 h-screen w-screen items-center justify-center">
+          <Image src={heroBG} quality={100} alt="Hero Background" fill className="object-cover self-center"/>
         </div>
         
         <section className="absolute items-start justify-center xl:pt-[4%] lg:pt-[10%] md:pt-[30%] max-lg:landscape:pt-[88px] pt-[calc(88px+5vh)] text-center h-full w-full flex">
@@ -39,7 +39,7 @@ export default function Home() {
         </section>
 
         <div className="absolute z-10 h-screen w-screen">
-          <Image src={heroFG} quality={100} alt="Hero Foreground" fill className="object-cover object-top self-start"/>
+          <Image src={heroFG} quality={100} alt="Hero Foreground" fill className="object-cover self-center"/>
         </div>
 
         <div className="relative z-50">
