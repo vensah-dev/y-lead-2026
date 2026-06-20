@@ -5,8 +5,10 @@ import { SecondaryButton } from "@/components/secondary-button";
 import { PrimaryButton } from "@/components/primary-button";
 
 import Image from "next/image";
-import heroBG from "@/public/images/hero-bg.webp";
+import heroBG from "@/public/images/hero-bg.avif";
 import heroFG from "@/public/images/hero-fg.avif";
+import potraitHeroBG from "@/public/images/potrait-hero-bg.avif";
+import potraitHeroFG from "@/public/images/potrait-hero-fg.avif";
 import yleadIcon from "@/public/icons/ylead-icon.png";
 import icon from "@/public/icons/icon.svg";
 import { ScrollAnimation } from "@/components/scroll-animation";
@@ -22,15 +24,32 @@ export default function Home() {
       {/* Hero */}
       <div className="relative h-screen w-screen self-center self-justify">
 
-        <div className="absolute z-0 h-screen w-screen items-center justify-center">
-          <Image src={heroBG} quality={100} alt="Hero Background" fill className="object-cover self-center"/>
+        <div className="absolute inset-0 z-0 h-screen w-screen">
+          <picture>
+            <source srcSet={heroBG.src} media="(min-width: 1024px)" />
+            <source srcSet={heroBG.src} media="(max-width: 1000px) and (orientation: landscape)" />
+            <Image
+              src={potraitHeroBG}
+              alt="Hero Background"
+              fill
+              priority
+              className="object-cover self-start object-top"
+            />
+          </picture>
         </div>
         
-        <section className="absolute items-start justify-center xl:pt-[4%] lg:pt-[10%] md:pt-[30%] max-lg:landscape:pt-[88px] pt-[calc(88px+5vh)] text-center h-full w-full flex">
+        <section className="
+        absolute items-start justify-center 
+        xl:pt-[4%] lg:pt-[10%] md:pt-[30%]
+        max-lg:landscape:pt-22 pt-[calc(88px+5vh)] max-lg:portrait:pt-[calc(10vh)] 
+        text-center h-full w-full flex">
         
           <div className="flex w-full justify-center z-10 opacity-90">
               <h1 
-                className="font-display text-center w-full text-[20vw] font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
+                className="
+                font-display text-center w-full 
+                text-[20vw] max-lg:portrait:text-[37vw] 
+                font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
               >
                 Y.LEAD 2026
               </h1>
@@ -38,13 +57,24 @@ export default function Home() {
 
         </section>
 
-        <div className="absolute z-10 h-screen w-screen">
-          <Image src={heroFG} quality={100} alt="Hero Foreground" fill className="object-cover self-center"/>
+        <div className="absolute inset-0 z-10 h-screen w-screen">
+          <picture>
+            <source srcSet={heroFG.src} media="(min-width: 1024px)" />
+            <source srcSet={heroFG.src} media="(max-width: 1000px) and (orientation: landscape)" />
+            <Image
+              src={potraitHeroFG}
+              alt="Hero Foreground"
+              fill
+              priority
+              className="object-cover object-top self-start"
+            />
+          </picture>
         </div>
 
         <div className="relative z-50">
           <Navbar/>
         </div>
+
       </div>
 
       {/* about */}
