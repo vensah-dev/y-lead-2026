@@ -68,7 +68,7 @@ export default function Theme() {
               className="text-justify text-weight-light text-font-secondary"
               data-animate
             >
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="list-disc list-inside space-y-3 text-left">
                 <li>Learning how arts and culture manifest in new forms with the emergence of technology</li>
                 <li>Loss of culture when traditions are becoming more modernised</li>
                 <li>Actions, both the government and we can take, to maintain arts and culture as an integral part of society</li>
@@ -99,7 +99,7 @@ export default function Theme() {
               className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="list-disc list-inside space-y-3 text-left">
                 <li>Progress in the green economy and technologies</li>
                 <li>Governmental policies to ensure sustainable development</li>
                 <li>Fostering environmental stewardship among citizens</li>
@@ -131,7 +131,7 @@ export default function Theme() {
               className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="list-disc list-inside space-y-3 text-left">
                 <li>Understanding how rising geopolitical tensions and conflicts shape global stability, and their impact on small, interconnected states such as Singapore</li>
                 <li>Shift from multilateralism to unilaterism, and its implications on a rule-based world order</li>
                 <li>Exploring the role of international cooperation in addressing global challenges</li>
@@ -162,7 +162,7 @@ export default function Theme() {
               className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="list-disc list-inside space-y-3 text-left">
                 <li>AI boosts productivity in our economy and brings convenience to our daily lives</li>
                 <li>Tech advancements displace jobs and also diminish critical thinking</li>
                 <li>SG Smart Nation initiatives, and how we can innovate better ways to engage the elderly who were left behind, as they are unable to utilise new technologies</li>
@@ -195,7 +195,7 @@ export default function Theme() {
               className="font-sans text-justify text-weight-light text-font-secondary"
               data-animate
             >
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="list-disc list-inside space-y-3 text-left">
                 <li>Equipping and empowering more youths to be able to voice out, participate, and push out initiatives to benefit the wider community.</li>
                 <li>Catalysing social mobility among marginalised groups</li>
                 <li>Policies that reduce the rich-poor divide to alleviate poverty, such as:

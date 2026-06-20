@@ -37,6 +37,8 @@ export default function Home() {
             />
           </picture>
         </div>
+
+        {/* start of hero text */}
         
         <section className="
         absolute items-start justify-center 
@@ -56,6 +58,8 @@ export default function Home() {
           </div>
 
         </section>
+
+        {/* end of hero text */}
 
         <div className="absolute inset-0 z-10 h-screen w-screen">
           <picture>
