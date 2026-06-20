@@ -33,7 +33,7 @@ export default function Theme() {
         </div>
 
 
-        <div className="flex items-center justify-center h-screen aspect-square max-w-3xl m-auto">
+        <div className="flex items-center justify-center h-screen portrait:w-full aspect-square max-w-3xl m-auto">
           
           <video
             autoPlay
