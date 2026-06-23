@@ -9,9 +9,9 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="py-6 px-4 sm:px-8 border-t border-border-color bg-footer-bg">
+    <footer className="py-6 px-8 border-t border-border-color bg-footer-bg">
 
-        <div className="flex gap-4 items-center justify-between max-w-7xl mx-auto w-full ">
+        <div className="flex gap-4 items-center justify-between sm:max-w-7xl sm:mx-auto w-full ">
 
           <div className="flex h-12 gap-2">
             <Image 
@@ -20,7 +20,7 @@ const Footer = () => {
               className="h-full w-auto"
             />
 
-            <div className="flex flex-col justify-center px-4">
+            <div className="flex flex-col justify-center px-4 max-sm:hidden ">
               <p className="text-footer-font text-bold text-2xl font-display">
                 Y.LEAD 2026
               </p>
@@ -33,7 +33,7 @@ const Footer = () => {
 
 
 
-          <div className="h-12 items-center justify-center flex px-4 py-8">
+          <div className="h-12 items-center justify-center flex py-8">
             <div className="h-10 flex gap-5 px-4 items-center">
               
               {/* Instagram */}
