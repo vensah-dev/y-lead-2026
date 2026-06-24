@@ -10,7 +10,7 @@ interface ScheduleWidgetProps {
 
 
 export default function ScheduleWidget({activities, color = 'blue' }: ScheduleWidgetProps) {
-  const bgColor = color === 'green' ? 'bg-green-200/75' : color === 'purple' ? 'bg-purple-100' : 'bg-blue-100';
+  const bgColor = color === 'green' ? 'bg-green-200/50' : color === 'purple' ? 'bg-pink-100/80' : 'bg-blue-100';
 
   return (
     <div className="xl:max-w-7xl w-full">

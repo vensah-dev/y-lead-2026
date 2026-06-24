@@ -21,7 +21,7 @@ interface TimelineRowProps {
 
 // Inline helper to safely use animation hooks per item without breaking React rules
 const TimelineRow: React.FC<TimelineRowProps> = ({ item, isEven, scrollYProgress, timelineHeight, colour}) => {
-  const timelineColour = colour === 'green' ? 'bg-green-300 ring-3 ring-green-200/50' : colour === 'purple' ? 'bg-purple-300 ring-3 ring-purple-200/50' : 'bg-blue-300 ring-3 ring-blue-200/50';
+  const timelineColour = colour === 'green' ? 'bg-green-300 ring-3 ring-green-200/50' : colour === 'purple' ? 'bg-pink-300 ring-3 ring-pink-200/50' : 'bg-blue-300 ring-3 ring-blue-200/50';
 
   const rowRef = useRef<HTMLDivElement>(null);
   const [rowPercent, setRowPercent] = useState<number>(0);
@@ -95,7 +95,7 @@ interface TimelineProps {
 }
 // MAIN COMPONENT
 export const Timeline: React.FC<TimelineProps> = ({ data, colour }) => {
-  var timelineColour = colour === 'green' ? 'from-green-300 to-green-200/50' : colour === 'purple' ? 'from-purple-300 to-purple-200/50' : 'from-blue-300 to-blue-100';
+  var timelineColour = colour === 'green' ? 'from-green-300 to-green-200/50' : colour === 'purple' ? 'from-pink-300 to-pink-200/50' : 'from-blue-300 to-blue-100';
 
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -116,7 +116,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data, colour }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 25%", "end 100%"],
+    offset: ["start 25%", "end 75%"],
   });
 
   const activeLineHeight = useTransform(scrollYProgress, [0, 1], [0, timelineHeight]);

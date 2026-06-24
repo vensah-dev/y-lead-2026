@@ -73,8 +73,8 @@ export default function Programmes() {
       date: "09-07-2026",
       colour: "blue",
       times: [
-        { time: '08 00', activities: ['Morning Assembly', 'Group Time', 'Admin Briefing'] },
-        { time: '09 00', activities: ['Cross Winds'] },
+        { time: '08 00', activities: ['Morning Assembly'] },
+        { time: '08 20', activities: ['Cross Winds', 'Group Time', 'Admin Briefing'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Breaker'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
@@ -87,8 +87,8 @@ export default function Programmes() {
       date: "09-07-2026",
       colour: "green",
       times: [
-        { time: '08 00', activities: ['Morning Assembly', 'Group Time', 'Admin Briefing'] },
-        { time: '09 00', activities: ['Blow Wind Blow'] },
+        { time: '08 00', activities: ['Morning Assembly'] },
+        { time: '08 20', activities: ['Blow Wind Blow', 'Group Time', 'Admin Briefing'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Breaker'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
@@ -140,7 +140,7 @@ export default function Programmes() {
     disabled:opacity-15 disabled:brightness-75
 
     ${currentSchedule.colour === 'green' ? 'bg-green-300/40 text-green-400' : 
-      currentSchedule.colour === 'purple' ? 'bg-purple-300/40 text-purple-400' : 
+      currentSchedule.colour === 'purple' ? 'bg-pink-300/40 text-pink-400' : 
       'bg-blue-300/40  text-blue-400'
     } 
   `;
@@ -151,13 +151,13 @@ export default function Programmes() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
-      <div className="xl:w-7xl w-full px-8 mx-auto my-48">
+      <div className="xl:w-7xl w-full px-8 mx-auto my-32">
 
         {/* timetable */}
 
         <div>
 
-          <div  className="text-center pb-48 text-font-primary flex flex-col items-center gap-4">
+          <div  className="text-center pb-48 pt-16 text-font-primary flex flex-col items-center gap-4">
             <h1 className="font-display text-5xl md:text-6xl font-bold">
               {currentSchedule.title}
             </h1>
