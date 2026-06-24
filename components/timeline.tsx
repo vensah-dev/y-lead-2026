@@ -2,6 +2,8 @@
 import { useScroll, useTransform, useSpring, motion, MotionValue } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
+import { ScrollAnimation } from "@/components/scroll-animation";
+
 import type { ScheduleColour } from "@/types/schedule"
 
 // 1. Define the shape of individual timeline data items
@@ -57,20 +59,21 @@ const TimelineRow: React.FC<TimelineRowProps> = ({ item, isEven, scrollYProgress
 
   return (
     <div ref={rowRef} className={`relative flex flex-col w-full items-start ${isEven ? "md:flex-row" : "md:flex-row-reverse"}`}>
+      <ScrollAnimation/>
       {/* 1. TITLE BLOCK (Desktop Only) */}
-      <div className={`hidden md:flex md:w-1/2 px-12 top-40 z-10 ${isEven ? "justify-end text-right" : "justify-start text-left"}`}>
+      <div className={`hidden md:flex md:w-1/2 px-12 top-40 z-10 ${isEven ? "justify-end text-right" : "justify-start text-left"}`} data-animate>
         <h3 className="text-3xl font-bold text-font-primary">
           {item.title}
         </h3>
       </div>
 
       {/* 2. CONTENT CARD BLOCK */}
-      <div className={`w-[calc(100vw-5rem)] md:w-1/2 max-md:pl-12 ${isEven ? "md:pl-12" : "md:pr-12"} `}>
+      <div className={`w-[calc(100vw-5rem)] md:w-1/2 max-md:pl-12 ${isEven ? "md:pl-12" : "md:pr-12"} `} data-animate>
         <p className="block md:hidden text-2xl mb-4 font-bold text-font-primary">
           {item.title}
         </p>
 
-        <div className="w-full relative">
+        <div className="w-full relative" data-animate>
           {item.content}
         </div>
       </div>
@@ -126,6 +129,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data, colour }) => {
 
   return (
     <div ref={containerRef} className="w-full relative">
+      <ScrollAnimation />
       <div ref={contentRef} className="relative flex flex-col gap-24 bottom-5 w-full">
         
         {data.map((item, index) => (

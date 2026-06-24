@@ -16,9 +16,9 @@ export default function ScheduleWidget({activities, color = 'blue' }: ScheduleWi
     <div className="xl:max-w-7xl w-full">
         <div className={`w-full ${bgColor ? bgColor : ''} p-8 rounded-2xl items-center gap-6 `}>
         
-          <h1 className='font-bold text-2xl text-font-primary pb-4'>
+          {/* <h1 className='font-bold text-2xl text-font-primary pb-4'>
             Activities
-          </h1>
+          </h1> */}
 
           <ul className='list-disc list-inside text-left space-y-3'>
 

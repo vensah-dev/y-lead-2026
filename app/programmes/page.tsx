@@ -71,7 +71,7 @@ export default function Programmes() {
     {
       title: "Day 3 - Fam L + E",
       date: "9 July",
-      colour: "blue",
+      colour: "green",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
         { time: '08 20', activities: ['Cross Winds', 'Group Time', 'Admin Briefing'] },
@@ -85,7 +85,7 @@ export default function Programmes() {
     {
       title: "Day 3 - Fam A + D",
       date: "9 July",
-      colour: "green",
+      colour: "purple",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
         { time: '08 20', activities: ['Blow Wind Blow', 'Group Time', 'Admin Briefing'] },
@@ -114,11 +114,37 @@ export default function Programmes() {
   const [dateNo, setDateNo] = useState(0);
   var currentSchedule = schedules[dateNo];
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth', // Animates the scroll smoothly
+  const scrollToTop = (): Promise<void> => {
+    return new Promise((resolve) => {
+      // Edge case: If the user is already at the very top, resolve instantly
+      if (window.scrollY === 0) {
+        resolve();
+        return;
+      }
+
+      const handleScrollEnd = () => {
+        window.removeEventListener("scrollend", handleScrollEnd);
+        resolve();
+      };
+
+      // Listen for the native finish of the smooth scrolling physics
+      window.addEventListener("scrollend", handleScrollEnd);
+      
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     });
+  };
+
+  const handleNavigation = async (direction: 'next' | 'prev') => {
+    await scrollToTop();
+    
+    if (direction === 'prev') {
+      setDateNo((prev) => Math.max(0, prev - 1));
+    } else {
+      setDateNo((prev) => Math.min(schedules.length - 1, prev + 1));
+    }
   };
 
   const timelineData = currentSchedule.times.map((item, index) => ({
@@ -143,6 +169,7 @@ export default function Programmes() {
       currentSchedule.colour === 'purple' ? 'bg-pink-300/40 text-pink-400' : 
       'bg-blue-300/40  text-blue-400'
     } 
+    select-none
   `;
 
   return (
@@ -157,11 +184,11 @@ export default function Programmes() {
 
         <div>
 
-          <div  className="text-center pb-48 pt-16 text-font-primary flex flex-col items-center gap-4">
+          <div  className="text-center pb-48 pt-16 text-font-primary flex flex-col items-center gap-4" data-animate>
             <h1 className="font-display text-5xl md:text-6xl font-extrabold [word-spacing:0.3rem]">
               {currentSchedule.title}
             </h1>
-            <p className="font-sans text-2xl font-thin mt-2 text-font-primary">
+            <p className="font-sans text-2xl font-thin mt-2 text-font-primary" data-animate>
               {currentSchedule.date}
             </p>
 
@@ -169,14 +196,14 @@ export default function Programmes() {
 
           <Timeline key={dateNo} data={timelineData} colour={currentSchedule.colour}/>
 
-          <div className="sticky bottom-0 flex w-full justify-center gap-10 py-6 z-100">
+          <div className="sticky bottom-0 flex w-full justify-center gap-10 py-6 z-100" data-animate>
 
-            <button className={backNextButtonStyles} onClick={() => {scrollToTop(); setDateNo((prev) => Math.max(0, prev - 1));}} disabled={dateNo === 0}>
+            <button className={backNextButtonStyles} onClick={async () => handleNavigation('prev')} disabled={dateNo === 0}>
               <div className="pr-0.5">&lt;</div>
             </button>
 
 
-            <button className={backNextButtonStyles} onClick={() => {scrollToTop(); setDateNo((prev) => Math.min(schedules.length - 1, prev + 1));}} disabled={dateNo === schedules.length - 1}>
+            <button className={backNextButtonStyles} onClick={async () => handleNavigation('next')} disabled={dateNo === schedules.length - 1}>
               <div className="pl-0.5">&gt;</div>
             </button>
 
