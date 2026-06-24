@@ -136,7 +136,7 @@ export default function Programmes() {
   const backNextButtonStyles: string = 
   `
     text-3xl
-    hover:opacity-50 px-3 aspect-square rounded-full 
+    hover:opacity-50 sm:px-3 px-4 aspect-square rounded-full 
     disabled:opacity-15 disabled:brightness-75
 
     ${currentSchedule.colour === 'green' ? 'bg-green-300/40 text-green-400' : 
