@@ -65,7 +65,7 @@ const TimelineRow: React.FC<TimelineRowProps> = ({ item, isEven, scrollYProgress
       </div>
 
       {/* 2. CONTENT CARD BLOCK */}
-      <div className="w-[calc(100vw-5rem)] pl-12 md:w-1/2 md:px-12 text-left">
+      <div className={`w-[calc(100vw-5rem)] md:w-1/2 ${isEven ? "md:pl-12" : "md:pr-12"} `}>
         <p className="block md:hidden text-2xl mb-4 font-bold text-font-primary">
           {item.title}
         </p>
@@ -126,7 +126,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data, colour }) => {
 
   return (
     <div ref={containerRef} className="w-full relative">
-      <div ref={contentRef} className="relative flex flex-col gap-24 bottom-5 max-w-7xl mx-auto">
+      <div ref={contentRef} className="relative flex flex-col gap-24 bottom-5 w-full">
         
         {data.map((item, index) => (
           <TimelineRow 

@@ -27,7 +27,7 @@ export default function Programmes() {
       colour: "blue",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
-        { time: '08 20', activities: ['Icebreakers + Group Time'] },
+        { time: '08 20', activities: ["Icebreakers", "Group Time"] },
         { time: '10 00', activities: ['Opening Ceremony'] },
         { time: '12 00', activities: ['Lunch'] },
         { time: '13 00', activities: ['Y.Lead Dance'] },
@@ -42,13 +42,13 @@ export default function Programmes() {
       colour: "green",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
-        { time: '08 20', activities: ['Admin Briefing, Cross Winds Briefing, Group Time'] },
+        { time: '08 20', activities: ['Admin Briefing', 'Cross Winds Briefing', 'Group Time'] },
         { time: '09 00', activities: ['Blow Wind Blow'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Chimes Preparation'] },
         { time: '14 20', activities: ['Wind Chimes'] },
-        { time: '15 40', activities: ['Group Time + Reflection'] },
-        { time: '16 40', activities: ['Admin Briefing + Debrief'] },
+        { time: '15 40', activities: ['Group Time', 'Reflection'] },
+        { time: '16 40', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 00', activities: ['Dismissal'] },
       ]
     },
@@ -58,13 +58,13 @@ export default function Programmes() {
       colour: "purple",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
-        { time: '08 20', activities: ['Admin Briefing, Leadership Collaboration Briefing, Group Time'] },
+        { time: '08 20', activities: ['Admin Briefing', 'Leadership Collaboration Briefing', 'Group Time'] },
         { time: '09 00', activities: ['Cross Winds'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Chimes Preparation'] },
         { time: '14 20', activities: ['Wind Chimes'] },
-        { time: '15 40', activities: ['Group Time + Reflection'] },
-        { time: '16 40', activities: ['Admin Briefing + Debrief'] },
+        { time: '15 40', activities: ['Group Time', 'Reflection'] },
+        { time: '16 40', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 00', activities: ['Dismissal'] },
       ]
     },
@@ -73,12 +73,12 @@ export default function Programmes() {
       date: "09-07-2026",
       colour: "blue",
       times: [
-        { time: '08 00', activities: ['Morning Assembly, Group Time + Admin Briefing'] },
+        { time: '08 00', activities: ['Morning Assembly', 'Group Time', 'Admin Briefing'] },
         { time: '09 00', activities: ['Cross Winds'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Breaker'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
-        { time: '17 20', activities: ['Admin Briefing, Debrief'] },
+        { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 40', activities: ['Dismissal'] },
       ]
     },
@@ -87,12 +87,12 @@ export default function Programmes() {
       date: "09-07-2026",
       colour: "green",
       times: [
-        { time: '08 00', activities: ['Morning Assembly, Group Time + Admin Briefing'] },
+        { time: '08 00', activities: ['Morning Assembly', 'Group Time', 'Admin Briefing'] },
         { time: '09 00', activities: ['Blow Wind Blow'] },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Breaker'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
-        { time: '17 20', activities: ['Admin Briefing, Debrief'] },
+        { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 40', activities: ['Dismissal'] },
       ]
     },
@@ -103,8 +103,8 @@ export default function Programmes() {
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
         { time: '08 20', activities: ['Wind Breaker'] },
-        { time: '11 20', activities: ['Lunch + Freshen up for Commencement'] },
-        { time: '12 40', activities: ['Reflection + Group Time, Photobooth'] },
+        { time: '11 20', activities: ['Lunch', 'Freshen up for Commencement'] },
+        { time: '12 40', activities: ['Reflection', 'Group Time', 'Photobooth'] },
         { time: '14 20', activities: ['Commencement Celebration'] },
         { time: '16 20', activities: ['Dismissal'] },
       ]
@@ -151,7 +151,7 @@ export default function Programmes() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
-      <div className="max-w-7xl mx-auto my-48">
+      <div className="xl:w-7xl w-full px-8 mx-auto my-48">
 
         {/* timetable */}
 
@@ -171,12 +171,12 @@ export default function Programmes() {
 
           <div className="sticky bottom-0 flex w-full justify-center gap-10 py-6 z-100">
 
-            <button className={backNextButtonStyles} onClick={() => {setDateNo((prev) => Math.max(0, prev - 1)); scrollToTop();}} disabled={dateNo === 0}>
+            <button className={backNextButtonStyles} onClick={() => {scrollToTop(); setDateNo((prev) => Math.max(0, prev - 1));}} disabled={dateNo === 0}>
               <div className="pr-0.5">&lt;</div>
             </button>
 
 
-            <button className={backNextButtonStyles} onClick={() => {setDateNo((prev) => Math.min(schedules.length - 1, prev + 1)); scrollToTop();}} disabled={dateNo === schedules.length - 1}>
+            <button className={backNextButtonStyles} onClick={() => {scrollToTop(); setDateNo((prev) => Math.min(schedules.length - 1, prev + 1));}} disabled={dateNo === schedules.length - 1}>
               <div className="pl-0.5">&gt;</div>
             </button>
 
