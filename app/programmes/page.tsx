@@ -137,7 +137,7 @@ export default function Programmes() {
   `
     text-3xl
     hover:opacity-50 px-3 aspect-square rounded-full 
-
+    disabled:opacity-15 disabled:brightness-75
 
     ${currentSchedule.colour === 'green' ? 'bg-green-300/40 text-green-400' : 
       currentSchedule.colour === 'purple' ? 'bg-purple-300/40 text-purple-400' : 
