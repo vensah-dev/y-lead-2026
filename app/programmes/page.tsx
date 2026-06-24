@@ -151,7 +151,7 @@ export default function Programmes() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
-      <div className="xl:w-7xl max-w-7xl px-8 mx-auto my-48">
+      <div className="xl:w-7xl w-full px-8 mx-auto my-48">
 
         {/* timetable */}
 
