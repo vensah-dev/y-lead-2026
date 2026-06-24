@@ -2,9 +2,8 @@ import React from 'react';
 
 import type { DaySchedule } from "@/types/schedule"
 
-import { SecondaryButton } from "@/components/secondary-button";
-
 import ScheduleWidget from "@/components/schedule-widget";
+import type { ScheduleColour } from "@/types/schedule"
 
 
 interface ScheduleDIVProps {
@@ -54,7 +53,6 @@ export default function ScheduleDIV({ currentSchedule }: ScheduleDIVProps) {
             {currentSchedule.times.map((item, index) => (
                 <ScheduleWidget
                 key={index}
-                time={item.time}
                 activities={item.activities}
                 color={currentSchedule.colour as ScheduleColour}
                 />
