@@ -91,7 +91,7 @@ export default function Home() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-4 text-font-primary"
+              className="font-display text-6xl font-bold mb-8 text-font-primary"
               data-animate
             >
               Y.LEAD 2026
@@ -122,11 +122,11 @@ export default function Home() {
         }
         right={
           <div className="flex flex-col items-start">
-            <h1 data-animate className="font-display text-6xl font-bold mb-4 text-font-primary">
+            <h1 data-animate className="font-display text-6xl font-bold mb-6  text-font-primary">
               Theme
             </h1>
 
-            <h1 data-animate className="text-[1.7rem] font-display font-semibold mb-4 text-font-secondary">
+            <h1 data-animate className="text-[1.7rem] font-display font-semibold mb-8  text-font-secondary">
               Zephyr: Shaping the Winds of Change
             </h1>
 
