@@ -59,7 +59,7 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold mb-12 text-font-primary"
               data-animate
             >
               Arts, Culture & Heritage
@@ -90,7 +90,7 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold  mb-12 text-font-primary"
               data-animate
             >
               Environment & Sustainability
@@ -122,7 +122,7 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold  mb-12 text-font-primary"
               data-animate
             >
               Regional and Global Affairs
@@ -153,7 +153,7 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold  mb-12 text-font-primary"
               data-animate
             >
               Innovation & AI
@@ -186,7 +186,7 @@ export default function Theme() {
         right={
           <div className="flex flex-col">
             <h1 
-              className="font-display text-6xl font-bold mb-6 text-font-primary"
+              className="font-display text-6xl font-bold  mb-12 text-font-primary"
               data-animate
             >
               Social Compact
