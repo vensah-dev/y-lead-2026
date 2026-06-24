@@ -16,6 +16,10 @@ import ScheduleWidget from "@/components/schedule-widget";
 import type { DaySchedule } from "@/types/schedule"
 import type { ScheduleColour } from "@/types/schedule"
 
+import mrMockPic from "@/public/images/MrMock.png"
+
+import Image from "next/image";
+
 export default function Programmes() {
 
   const prefix = process.env.NODE_ENV === 'production' ? '' : '';
@@ -178,7 +182,7 @@ export default function Programmes() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
-      <div className="xl:w-7xl w-full px-8 mx-auto my-32">
+      <div className="xl:w-7xl w-full px-8 mx-auto my-32 ">
 
         {/* timetable */}
 
@@ -210,9 +214,61 @@ export default function Programmes() {
           </div>
 
         </div>
-        
 
+      </div>
 
+      {/* keynote speaker */}
+      <div className="w-full">
+
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="border-t border-background-secondary max-w-7xl mx-auto px-8 mb-12"/>
+          <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
+            Wind Chimes
+          </h1>
+          <h2 data-animate className="font-display text-3xl mb-12 font-semibold text-font-primary w-full">
+            Panel Discussion
+          </h2>
+          <div className="border-t border-background-secondary max-w-7xl mx-auto px-8"/>
+        </div>
+
+        <SplitSection
+          left={
+            <div className="relative h-full aspect-875/700 ">
+              <Image
+                src={mrMockPic}
+                alt="Y.LEAD Logo Glow"
+                fill
+                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/15"
+              />
+            </div>
+          }
+          right={
+            <div className="flex flex-col items-start">
+              <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
+                Keynote Speaker
+              </h1>
+              <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
+                Mr Mock Yi Jun
+              </h2>
+              <h2 data-animate className="tracking-tighter text-font-primary w-full">
+                Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI        
+              </h2>
+            </div>
+          }
+          addClassName="bg-background-primary -mb-48"
+        />
+
+        <SplitSection 
+          left={
+            <div className="flex flex-col items-start border-t border-b border-background-secondary">
+              <div data-animate className="text-base text-font-primary w-full py-8">
+                  Since 2016, Mr Mock Yi Jun has been Co-Founder and President of Advisory Singapore, a fully youth-led charity that has helped over 278,000 young Singaporeans from all walks of life make informed career choices. Advisory Singapore runs Singapore's largest pro bono careers-based mentorship programme for students, having delivered over 15,000 hours of mentorship since 2020. Mr Mock currently serves as a Senior Manager of the Quantum Policy and Strategy Unit at the Ministry of Digital Development and Information. His remarkable career journey and distinguished recognitions — including being named a #Generation17 Young Leader and a Queen's Young Leader — speak to his deep and enduring passion for leadership and service. Participants at the Y.LEAD Seminar 2026 will have the opportunity to draw inspiration from Mr Mock's broad and varied experiences across leadership advisory, youth empowerment, and both local and global service. 
+              </div>
+            </div>
+          }
+
+          addClassName="bg-background-primary -mt-16"
+        />
       </div>
 
       <Footer />

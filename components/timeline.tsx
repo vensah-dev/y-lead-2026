@@ -119,7 +119,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data, colour }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 25%", "end 75%"],
+    offset: ["start 25%", "end 70%"],
   });
 
   const activeLineHeight = useTransform(scrollYProgress, [0, 1], [0, timelineHeight]);

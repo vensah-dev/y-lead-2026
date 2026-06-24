@@ -170,7 +170,7 @@ export default function Home() {
           </div>
         }
 
-        addClassName="bg-background-primary -mb-32"
+        addClassName="bg-background-primary -mb-"
       />
       {/* Chairs note */}
       <SplitSection 
