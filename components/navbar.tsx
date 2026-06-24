@@ -22,14 +22,14 @@ const Navbar = () => {
   return (
     <nav className="px-4 sm:px-8 ">
       <div className="h-22 mx-4 flex justify-between items-center">
-        <div className="relative h-full aspect-square flex items-center">
+        <Link className="relative h-full aspect-square flex items-center" href={"/"}>
           <Image 
             src={icon}
             alt="Y.LEAD Logo" 
             fill
             className="mr-2"
           />
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
