@@ -151,13 +151,13 @@ export default function Programmes() {
       <Navbar/>
       {/* <div className="h-32" /> */}
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto my-48">
 
         {/* timetable */}
 
         <div>
 
-          <div  className="text-center py-48 text-font-primary flex flex-col items-center gap-4">
+          <div  className="text-center pb-48 text-font-primary flex flex-col items-center gap-4">
             <h1 className="font-display text-5xl md:text-6xl font-bold">
               {currentSchedule.title}
             </h1>
