@@ -65,7 +65,7 @@ const TimelineRow: React.FC<TimelineRowProps> = ({ item, isEven, scrollYProgress
       </div>
 
       {/* 2. CONTENT CARD BLOCK */}
-      <div className={`w-[calc(100vw-5rem)] md:w-1/2 ${isEven ? "md:pl-12" : "md:pr-12"} `}>
+      <div className={`w-[calc(100vw-5rem)] md:w-1/2 max-md:pl-12 ${isEven ? "md:pl-12" : "md:pr-12"} `}>
         <p className="block md:hidden text-2xl mb-4 font-bold text-font-primary">
           {item.title}
         </p>

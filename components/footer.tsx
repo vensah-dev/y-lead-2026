@@ -9,9 +9,9 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="py-6 px-8 border-t border-border-color bg-footer-bg">
+    <footer className="py-6 border-t border-border-color bg-footer-bg">
 
-        <div className="flex gap-4 items-center justify-between sm:max-w-7xl sm:mx-auto w-full ">
+        <div className="flex gap-4 items-center justify-between sm:max-w-7xl sm:mx-auto w-full px-8">
 
           <div className="flex h-12 gap-2">
             <Image 
