@@ -23,7 +23,7 @@ export default function Programmes() {
   var schedules: DaySchedule[] = [
     {
       title : "Day 1",
-      date: "07-07-2026",
+      date: "7 July",
       colour: "blue",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -38,7 +38,7 @@ export default function Programmes() {
     },
     {
       title: "Day 2 - Fam L + E",
-      date: "08-07-2026",
+      date: "8 July",
       colour: "green",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -54,7 +54,7 @@ export default function Programmes() {
     },
     {
       title: "Day 2 - Fam A + D",
-      date: "08-07-2026",
+      date: "8 July",
       colour: "purple",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -70,7 +70,7 @@ export default function Programmes() {
     },
     {
       title: "Day 3 - Fam L + E",
-      date: "09-07-2026",
+      date: "9 July",
       colour: "blue",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -84,7 +84,7 @@ export default function Programmes() {
     },
     {
       title: "Day 3 - Fam A + D",
-      date: "09-07-2026",
+      date: "9 July",
       colour: "green",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -98,7 +98,7 @@ export default function Programmes() {
     },
     {
       title: "Day 4",
-      date: "10-07-2026",
+      date: "10 July",
       colour: "blue",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
@@ -158,10 +158,10 @@ export default function Programmes() {
         <div>
 
           <div  className="text-center pb-48 pt-16 text-font-primary flex flex-col items-center gap-4">
-            <h1 className="font-display text-5xl md:text-6xl font-bold">
+            <h1 className="font-display text-5xl md:text-6xl font-extrabold [word-spacing:0.3rem]">
               {currentSchedule.title}
             </h1>
-            <p className="font-display text-4xl md:text-5xl font-light mt-2 text-font-primary/80">
+            <p className="font-sans text-2xl font-thin mt-2 text-font-primary">
               {currentSchedule.date}
             </p>
 
