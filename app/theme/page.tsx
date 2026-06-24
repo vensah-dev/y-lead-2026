@@ -28,7 +28,7 @@ export default function Theme() {
 
       {/* Hero */}
       <div className="flex h-screen w-screen self-center self-justify">
-        <div className="absolute w-screen z-10 opacity-0 animate-[fade-in_0.6s_ease-out_forwards]">
+        <div className="absolute w-screen z-10">
           <Navbar/>
         </div>
 
@@ -42,7 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
-            <source src={`${prefix}/images/zephyr-animation.mov`} type="video/mp4" />
+            <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
