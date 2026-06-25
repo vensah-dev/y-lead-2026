@@ -9,6 +9,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import Link from 'next/link';
 import { cheers } from '@/lib/cheers';
 import CheerThumbnail from './cheers-thumbnail';
+import { ScrollAnimation } from './scroll-animation';
 
 export function AllCheers({ cheers }: any) {
   const cheersAlphabetical = JSON.parse(JSON.stringify(cheers)).sort((a: any, b: any) => a.title.localeCompare(b.title))
@@ -40,10 +41,11 @@ export function AllCheers({ cheers }: any) {
 
   return (
     <div className="flex-col max-w-7xl mx-auto my-32 p-8">
+      <ScrollAnimation/>
 
-      <p className='font-display text-7xl w-full text-center text-white100 font-bold mb-12'>All Cheers</p>
+      <p className='font-display text-7xl w-full text-center text-white100 font-bold mb-12' data-animate>All Cheers</p>
 
-      <div className='flex flex-row items-center mb-12 bg-background-secondary has-[:focus]:ring-2 has-[:focus]:ring-font-primary/25 has-[:focus]:brightness-103 rounded-full overflow-clip'>
+      <div data-animate className='flex flex-row items-center mb-12 bg-background-secondary has-[:focus]:ring-2 has-[:focus]:ring-font-primary/25 has-[:focus]:brightness-103 rounded-full overflow-clip'>
 
         <div className='px-6'>
           <FaMagnifyingGlass className='w-5 h-5 fill-font-secondary' />
@@ -66,7 +68,10 @@ export function AllCheers({ cheers }: any) {
       <div className='grid lg:grid-cols-4 grid-cols-1 gap-8'>
         {
           filteredCheers.map((cheer:any, index:any) => (
-            <CheerThumbnail key={index} cheer={cheer} />
+
+            <div key={index} data-animate>
+              <CheerThumbnail cheer={cheer}/>
+            </div>
           ))
         }
       </div>
