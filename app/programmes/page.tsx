@@ -238,7 +238,7 @@ export default function Programmes() {
                 src={mrMockPic}
                 alt="Y.LEAD Logo Glow"
                 fill
-                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/15"
+                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
               />
             </div>
           }

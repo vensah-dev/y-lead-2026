@@ -42,6 +42,7 @@ export default function Theme() {
             className=" h-full w-full image-cover pointer-events-none mix-blend-multiply"
             preload="auto"
           >
+            {/* remember that the .MOV is case sensitive */}
             <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
