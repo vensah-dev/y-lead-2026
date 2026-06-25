@@ -3,11 +3,11 @@ import type { NextConfig } from 'next';
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // output: 'export',
   // basePath: isProd ? `/y-lead-2026` : '',
-  images: {
-    unoptimized: true,
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
 };
 
 export default nextConfig;

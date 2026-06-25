@@ -14,8 +14,8 @@ const SplitSection = (
     addCustomGap?: string,
   }) => {
   return (
-      <div className={`${addClassName} w-screen`}>
-          <div data-animate className={`py-32 flex max-md:flex-col max-w-7xl mx-auto px-8 items-center justify-center ${addCustomGap}`}>
+      <div className={`${addClassName} w-full`}>
+          <div data-animate className={`flex max-md:flex-col w-full items-center justify-center ${addCustomGap}`}>
 
             <div data-animate className="h-full w-full">
               {left}

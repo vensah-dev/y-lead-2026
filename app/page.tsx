@@ -109,7 +109,7 @@ export default function Home() {
           </div>
         }
         
-        addClassName="bg-background-primary"
+        addClassName="bg-background-primary py-32"
 
       />
 
@@ -153,6 +153,7 @@ export default function Home() {
             </div>
           </div>
         }
+        addClassName="bg-background-secondary py-32"
       />
 
       {/* Chairs note */}
@@ -170,7 +171,7 @@ export default function Home() {
           </div>
         }
 
-        addClassName="bg-background-primary -mb-"
+        addClassName="bg-background-primary pt-32 pb-12"
       />
       {/* Chairs note */}
       <SplitSection 
@@ -197,7 +198,7 @@ export default function Home() {
           </div>
         }
 
-        addClassName="bg-background-primary -mt-16"
+        addClassName="bg-background-primary pb-32"
       />
 
 

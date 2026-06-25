@@ -2,10 +2,11 @@
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { SecondaryButton } from "@/components/secondary-button";
 import { PrimaryButton } from "@/components/primary-button";
+import Image from "next/image";
 
 import { Timeline } from "@/components/timeline"
 
@@ -16,9 +17,19 @@ import ScheduleWidget from "@/components/schedule-widget";
 import type { DaySchedule } from "@/types/schedule"
 import type { ScheduleColour } from "@/types/schedule"
 
-import mrMockPic from "@/public/images/MrMock.png"
+import mrMockPic from "@/public/panelists/mock-yi-jun-cropped.png"
+import christy from "@/public/panelists/christy tan.jpeg"
+import james from "@/public/panelists/James CK Kok.png"
+import keith from "@/public/panelists/keith yap.webp"
+import khim from "@/public/panelists/Khim Tan.jpeg"
+import PIRAGATHESH from "@/public/panelists/PIRAGATHESH SUBRAMANIAN.jpg"
+import royston from "@/public/panelists/ROYSTON PHANG.png"
+import SARAFIAN from "@/public/panelists/SARAFIAN SALLEH.jpg"
+import TANG from "@/public/panelists/TANG WANZHEN.jpg"
+import walid from "@/public/panelists/walid abdullah.png"
+import YONG from "@/public/panelists/YONG MIN HO.png"
+import ZOE from "@/public/panelists/ZOE TEE.jpg"
 
-import Image from "next/image";
 
 export default function Programmes() {
 
@@ -162,6 +173,68 @@ export default function Programmes() {
     )
   }));
 
+  const panelistData =[
+    // {
+    //   name: "Mock Yi Jun",
+    //   description: "",
+    //   image: mrMockPic
+    // },
+    {
+      name: "christy tan",
+      description: "Managing Director, Senior Investment Strategist Franklin Templeton Institute, Templeton Asset Management Ltd",
+      image: christy
+    },
+    {
+      name: "James CK Kok",
+      description: "Head of Strategic Partnerships, AI Singapore",
+      image: james
+    },
+    {
+      name: "keith yap",
+      description: "President of LKYSPP Alumni Singapore Chapter | Podcaster",
+      image: keith
+    },
+    {
+      name: "Khim Tan",
+      description: "Head of Programmes at Access Singapore",
+      image: khim
+    },
+    {
+      name: "piragathesh subramanian",
+      description: "United Nations Youth Director",
+      image: PIRAGATHESH
+    },
+    {
+      name: "ROYSTON PHANG",
+      description: "Lead Facilitator @ SALTTWORKSHOP + JR | Adjunct Lecturer @ Nanyang Academy of Fine Arts | UX Designer",
+      image: royston
+    },
+    {
+      name: "SARAFIAN SALLEH",
+      description: "Heritage Activist | Engineering Consultant Licensed STB Tourist Guide | President of the Bugis Malay Society Singapore",
+      image: SARAFIAN
+    },
+    {
+      name: "TANG WANZHEN",
+      description: "General Manager, Water Reclamation (Plants) Department, Public Utilities Board (PUB)",
+      image: TANG
+    },
+    {
+      name: "walid jumblatt abdullah",
+      description: "Associate Professor in Political Science at Nanyang Technological University",
+      image: walid
+    },
+    {
+      name: "YONG MIN HO",
+      description: "Heritage Educator @urbanist.singapore",
+      image: YONG
+    },
+    {
+      name: "ZOE TEE",
+      description: "Senior Social Worker Deputy Head of Youth Department at Fei Yue Community Services",
+      image: ZOE
+    },
+  ]
 
   const backNextButtonStyles: string = 
   `
@@ -218,57 +291,117 @@ export default function Programmes() {
       </div>
 
       {/* keynote speaker */}
-      <div className="w-full">
+      <div className="w-full bg-background-secondary">
+        <div className="max-w-7xl mx-auto px-8 pb-32">
 
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="border-t border-background-secondary max-w-7xl mx-auto px-8 mb-12"/>
-          <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
-            Wind Chimes
-          </h1>
-          <h2 data-animate className="font-display text-3xl mb-12 font-semibold text-font-primary w-full">
-            Panel Discussion
-          </h2>
-          <div className="border-t border-background-secondary max-w-7xl mx-auto px-8"/>
-        </div>
+          {/* title of panel discussion */}
+          <div className="border-b border-background-tertiary max-w-7xl mx-auto px-8">
 
-        <SplitSection
-          left={
-            <div className="relative h-full aspect-875/700 ">
-              <Image
-                src={mrMockPic}
-                alt="Y.LEAD Logo Glow"
-                fill
-                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
-              />
-            </div>
-          }
-          right={
-            <div className="flex flex-col items-start">
-              <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
-                Keynote Speaker
-              </h1>
-              <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
-                Mr Mock Yi Jun
-              </h2>
-              <h2 data-animate className="tracking-tighter text-font-primary w-full">
-                Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI        
-              </h2>
-            </div>
-          }
-          addClassName="bg-background-primary -mb-48"
-        />
+            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 mt-16 font-bold text-font-primary w-full">
+              Wind Chimes
+            </h1>
+            <h2 data-animate className="font-display text-3xl mb-8 font-semibold text-font-primary w-full">
+              Panel Discussion
+            </h2>
 
-        <SplitSection 
-          left={
-            <div className="flex flex-col items-start border-t border-b border-background-secondary">
-              <div data-animate className="text-base text-font-primary w-full py-8">
-                  Since 2016, Mr Mock Yi Jun has been Co-Founder and President of Advisory Singapore, a fully youth-led charity that has helped over 278,000 young Singaporeans from all walks of life make informed career choices. Advisory Singapore runs Singapore's largest pro bono careers-based mentorship programme for students, having delivered over 15,000 hours of mentorship since 2020. Mr Mock currently serves as a Senior Manager of the Quantum Policy and Strategy Unit at the Ministry of Digital Development and Information. His remarkable career journey and distinguished recognitions — including being named a #Generation17 Young Leader and a Queen's Young Leader — speak to his deep and enduring passion for leadership and service. Participants at the Y.LEAD Seminar 2026 will have the opportunity to draw inspiration from Mr Mock's broad and varied experiences across leadership advisory, youth empowerment, and both local and global service. 
+          </div>
+
+          {/* Keynote speaker */}
+          <SplitSection
+            left={
+              <div className="relative aspect-875/700 ">
+                <Image
+                  src={mrMockPic}
+                  alt="Keynote Speaker"
+                  fill
+                  className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
+                />
               </div>
-            </div>
-          }
+            }
+            right={
+              <div className="flex flex-col items-start w-full">
+                <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
+                  Keynote Speaker
+                </h1>
+                <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
+                  Mr Mock Yi Jun
+                </h2>
+                <h2 data-animate className="tracking-tighter text-font-primary w-full">
+                  Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI        
+                </h2>
+              </div>
+            }
+            addClassName="bg-background-secondary py-12"
+          />
 
-          addClassName="bg-background-primary -mt-16"
-        />
+          {/* Keynote speaker paragraph */}
+          <div className="flex flex-col items-start border-t border-b border-background-tertiary w-full">
+            <div data-animate className="text-base text-font-primary w-full py-8">
+                Since 2016, Mr Mock Yi Jun has been Co-Founder and President of Advisory Singapore, a fully youth-led charity that has helped over 278,000 young Singaporeans from all walks of life make informed career choices. Advisory Singapore runs Singapore's largest pro bono careers-based mentorship programme for students, having delivered over 15,000 hours of mentorship since 2020. Mr Mock currently serves as a Senior Manager of the Quantum Policy and Strategy Unit at the Ministry of Digital Development and Information. His remarkable career journey and distinguished recognitions — including being named a #Generation17 Young Leader and a Queen's Young Leader — speak to his deep and enduring passion for leadership and service. Participants at the Y.LEAD Seminar 2026 will have the opportunity to draw inspiration from Mr Mock's broad and varied experiences across leadership advisory, youth empowerment, and both local and global service. 
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      {/* panelists */}
+      <div className="w-full bg-background-primary">
+        <div className="max-w-7xl mx-auto px-8">
+
+          {/* Panelists title */}
+          <div className="border-b border-background-tertiary max-w-7xl mx-auto px-8" >
+
+            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl my-16 font-bold text-font-primary w-full">
+              Panelists
+            </h1>
+            
+          </div>
+
+          {/* panelist cards */}
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-32 gap-x-16 gap-y-32 justify-center items-center pt-16 pb-32">
+            {
+              panelistData.map((data: any, index: any) => {
+                const isLoneLastElement = index === panelistData.length - 1 && index % 2 === 0;
+
+                return (
+                  <div key={index} className={`flex items-center gap-[6vw] justify-start ${isLoneLastElement ? "md:col-span-2 md:justify-center md:mx-auto md:max-w-xl" : ""}`}>
+
+                    {/* Image Wrapper */}
+                    <div data-animate className="relative h-[12vw] min-h-[100px] max-h-[200px] aspect-square rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={data.image}
+                        alt="panelist"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+
+                    {/* Text Wrapper */}
+                    <div className={`flex flex-col items-start min-w-0 ${isLoneLastElement ? "w-auto" : "w-[calc(100%-6vw-12vw)]"}`} >
+                      <h1 
+                        data-animate 
+                        className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary capitalize text-balance"
+                      >
+                        {data.name.toLowerCase()}
+                      </h1>
+                      <h2 
+                        data-animate 
+                        className="mb-6 text-font-primary text-balance"
+                      >
+                        {data.description} 
+                      </h2>
+                    </div>
+
+                  </div>
+                );
+              })
+            }
+          </div>
+
+        </div>
       </div>
 
       <Footer />
