@@ -307,32 +307,29 @@ export default function Programmes() {
           </div>
 
           {/* Keynote speaker */}
-          <SplitSection
-            left={
-              <div className="relative aspect-875/700 ">
-                <Image
-                  src={mrMockPic}
-                  alt="Keynote Speaker"
-                  fill
-                  className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
-                />
-              </div>
-            }
-            right={
-              <div className="flex flex-col items-start w-full">
-                <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
-                  Keynote Speaker
-                </h1>
-                <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
-                  Mr Mock Yi Jun
-                </h2>
-                <h2 data-animate className="tracking-tighter text-font-primary w-full">
-                  Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI        
-                </h2>
-              </div>
-            }
-            addClassName="bg-background-secondary py-12"
-          />
+          <div className="bg-background-secondary flex justify-between items-center py-12">
+            <div className="relative w-[60vh] aspect-875/700 ">
+              <Image
+                src={mrMockPic}
+                alt="Keynote Speaker"
+                fill
+                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
+              />
+            </div>
+
+            <div className="flex flex-col items-start">
+              <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
+                Keynote Speaker
+              </h1>
+              <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
+                Mr Mock Yi Jun
+              </h2>
+              <h2 data-animate className="tracking-tighter text-font-primary w-full">
+                Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI
+              </h2>
+            </div>
+
+          </div>
 
           {/* Keynote speaker paragraph */}
           <div className="flex flex-col items-start border-t border-b border-background-tertiary w-full">
