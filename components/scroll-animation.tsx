@@ -47,7 +47,7 @@ export function ScrollAnimation() {
         observerRef.current.disconnect();
       }
     };
-  }, []);
+  });
 
   return null;
 }
