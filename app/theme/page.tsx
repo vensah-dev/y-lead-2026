@@ -53,7 +53,7 @@ export default function Theme() {
       {/* arts mini */}
       <SplitSection 
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl">
+          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
             <GlowingImage image={artsMini} />
           </div>
         }
@@ -84,7 +84,7 @@ export default function Theme() {
       {/* environment mini */}
       <SplitSection 
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl">
+          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
             <GlowingImage image={sustainableMini} />
           </div>
         }
@@ -116,7 +116,7 @@ export default function Theme() {
       {/* regional and global affairs mini */}
       <SplitSection 
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl">
+          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
             <GlowingImage image={miniAffair} />
           </div>
         }
@@ -147,7 +147,7 @@ export default function Theme() {
       {/* innovation mini */}
       <SplitSection 
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl">
+          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
             <GlowingImage image={techMini} />
           </div>
         }
@@ -180,7 +180,7 @@ export default function Theme() {
       {/* social mini */}
       <SplitSection 
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl">
+          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
             <GlowingImage image={socialMini} />
           </div>
         }
