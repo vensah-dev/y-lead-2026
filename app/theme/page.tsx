@@ -1,3 +1,5 @@
+'use client'
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -43,7 +45,10 @@ export default function Theme() {
             preload="auto"
           >
             {/* remember that the .MOV is case sensitive */}
+            {/* mp4 will be main and fallback is quicktime for iOS and safari bs */}
+            <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/mp4" />
             <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/quicktime" />
+
             Your browser does not support the video tag.
           </video>
         </div>
