@@ -307,8 +307,8 @@ export default function Programmes() {
           </div>
 
           {/* Keynote speaker */}
-          <div className="bg-background-secondary flex justify-between items-center py-12">
-            <div className="relative w-[60vh] aspect-875/700 ">
+          <div className="bg-background-secondary flex max-md:flex-col justify-between gap-8 items-center py-12">
+            <div className="relative w-[37vw] max-md:w-full aspect-875/700 ">
               <Image
                 src={mrMockPic}
                 alt="Keynote Speaker"
