@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import React from "react";
 
 import { SecondaryButton } from "@/components/secondary-button";
 import { PrimaryButton } from "@/components/primary-button";
@@ -94,15 +95,54 @@ export default function Theme() {
     }
   ];
 
+  const teacherCreditsList = [
+    {
+      role: "Advisors",
+      names: "Mdm Choy Wai Yin, Mr Alvin Lau Wai Chi, Mr Ng Hong Peng, Mr Tang Wei Lun Aaron, Mr Michael Lau"
+    },
+    {
+      role: "Chairpersons",
+      names: "Ms Carine Ng, Mr Alex Chan"
+    },
+    {
+      role: "Admin & Logistics",
+      names: "Mr Liu Gong Kai, Mr Lu Jiayu"
+    },
+    {
+      role: "Ceremonies",
+      names: "Ms Foo Xiao Chih, Ms Jessie Eu"
+    },
+    {
+      role: "Facilitator Committee",
+      names: "Mr Alex Chan, Mr Mark Cordiner"
+    },
+    {
+      role: "Exploration",
+      names: "Mr Tay Han Dong, Ms Lisa Khang"
+    },
+    {
+      role: "Empowerment",
+      names: "Ms Carine Ng, Ms Lau Shi Yun"
+    },
+    {
+      role: "Media & Publicity",
+      names: "Ms Corina Chang, Ms Carine Ng"
+    },
+    {
+      role: "Engagement",
+      names: "Ms Corina Chang, Ms Juansa Cheng"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background-primary">
       <ScrollAnimation />
       <Navbar/>
 
       <div className="w-screen py-32">
-        <h1 className="max-w-7xl px-8 mx-auto text-7xl text-center text-font-primary font-display font-bold pb-48">Meet the Organising Committee!</h1>
+        <h1 className="max-w-7xl px-8 mx-auto text-7xl text-center text-font-primary font-display font-bold py-2.5">Meet the Organising Committee!</h1>
 
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col">
           { 
             creditsList.map((credit:any, index:any) => (
               <div key={index}>
@@ -124,7 +164,7 @@ export default function Theme() {
                   </div>
                 }
 
-                addClassName = "bg-background-primary"
+                addClassName={`${index%2 == 0 ? "bg-background-primary" : "bg-background-secondary"} py-32`}
 
               />
               </div>
@@ -132,6 +172,37 @@ export default function Theme() {
             ))
 
           }
+        </div>
+
+        <div className="flex flex-col bg-background-primary pt-24 max-w-7xl px-8 mx-auto">
+
+          <div className="text-center border-t border-b border-background-secondary py-8">
+            <h1 className="text-5xl max-md:text-4xl text-center text-font-primary font-display font-bold pb-8">Acknowledgements</h1>
+            <p className="text-base font-light font-sans">
+              We wish to thank our Guest-of-Honour, our invited speakers for the Panel Discussions, 
+              teachers, students, partners, and others who have contributed to the seminar in one 
+              way or another. We would also like to specially thank the following for supporting this event:
+            </p>
+          </div>
+
+          <div className="md:mb-4">
+            <h2 className="text-4xl max-md:text-2xl font-extrabold font-display pt-16 pb-6">Teacher Organising Committee</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-y-8 gap-y-1 gap-x-12 text-sm md:text-base">
+              {teacherCreditsList.map((item: any, index: any) => (
+                <React.Fragment key={index}>
+
+                  <div className="text-xl font-sans font-semibold pt-4">
+                    {item.role}
+                  </div>
+                  <div className="md:col-span-2">
+                    {item.names}
+                  </div>
+
+                </React.Fragment>
+              ))}
+            </div>
         </div>
 
       </div>
