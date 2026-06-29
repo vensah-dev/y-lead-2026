@@ -43,7 +43,7 @@ export default function Theme() {
             preload="auto"
           >
             {/* remember that the .MOV is case sensitive */}
-            <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/mp4" />
+            <source src={`${prefix}/images/zephyr-animation.MOV`} type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
         </div>
