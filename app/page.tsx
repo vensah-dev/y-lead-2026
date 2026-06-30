@@ -146,7 +146,7 @@ export default function Home() {
 
               </h2>
 
-              <div className="pt-8 grid grid-flow-col auto-cols-max gap-2">
+              <div className="pt-8 flex h-[5rem] gap-2">
                 <PrimaryButton 
                   text={
                     <>More about the theme</>
@@ -203,7 +203,7 @@ export default function Home() {
                 Lee Boyan, Phoebe Tan En Minn, Ong Yue Yu Valerie, Devendran Venkatesh</p>
               </div>
 
-              <div className="pt-8 grid grid-flow-col auto-cols-max gap-2">
+              <div className="pt-8 flex gap-2 h-[5rem]">
                 <PrimaryButton 
                   text={
                     <>More about us</>
