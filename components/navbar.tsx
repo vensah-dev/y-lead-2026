@@ -7,14 +7,9 @@ import Link from 'next/link';
 
 import icon from '@/public/icons/icon.svg';
 
+import { navItems } from '@/lib/navbar';
+
 const Navbar = () => {
-  const navItems = [
-    { name: 'About', href: '/' },
-    { name: 'Theme', href: '/theme' },
-    { name: 'Programmes', href: '/programmes' },
-    { name: 'Cheers', href: '/cheers' },
-    // { name: 'Media', href: '/media' },
-  ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();

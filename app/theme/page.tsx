@@ -24,6 +24,64 @@ import GlowingImage from "@/components/glowing-image";
 
 export default function Theme() {
   const prefix = process.env.NODE_ENV === 'production' ? '' : '';
+
+  const themeSections = [
+    {
+      title: "Arts, Culture & Heritage",
+      image: artsMini,
+      content: [
+        "Learning how arts and culture manifest in new forms with the emergence of technology",
+        "Loss of culture when traditions are becoming more modernised",
+        "Actions, both the government and we can take, to maintain arts and culture as an integral part of society",
+        "Strengthening our social identity through arts and culture"
+      ]
+    },
+    {
+      title: "Environment & Sustainability",
+      image: sustainableMini,
+      content: [
+        "Progress in the green economy and technologies",
+        "Governmental policies to ensure sustainable development",
+        "Fostering environmental stewardship among citizens",
+        "Lower SES groups may be disproportionately affected during the pursuit of environmental sustainability"
+      ]
+    },
+    {
+      title: "Regional and Global Affairs",
+      image: miniAffair,
+      content: [
+        "Understanding how rising geopolitical tensions and conflicts shape global stability, and their impact on small, interconnected states such as Singapore",
+        "Shift from multilateralism to unilaterism, and its implications on a rule-based world order",
+        "Exploring the role of international cooperation in addressing global challenges",
+        "How diplomacy and collective action can foster more stable and peaceful international relations",
+        "Reflecting on the role of individuals in mitigating the impacts of global conflicts on Singapore"
+      ]
+    },
+    {
+      title: "Innovation & AI",
+      image: techMini,
+      content: [
+        "AI boosts productivity in our economy and brings convenience to our daily lives",
+        "Tech advancements displace jobs and also diminish critical thinking",
+        "SG Smart Nation initiatives, and how we can innovate better ways to engage the elderly who were left behind, as they are unable to utilise new technologies",
+        "Combating AI Deepfakes",
+        "National AI Council being set up"
+      ]
+    },
+    {
+      title: "Social Compact",
+      image: socialMini,
+      content: [
+        "Equipping and empowering more youths to be able to voice out, participate, and push out initiatives to benefit the wider community.",
+        "Catalysing social mobility among marginalised groups",
+        "Policies that reduce the rich-poor divide to alleviate poverty, such as:",
+        "Education",
+        "Grants & Subsidies",
+        "Identifying the disconnect between the needs of the marginalised groups of society and the existing aid provided"
+      ]
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-background-primary">
       <ScrollAnimation />
@@ -55,11 +113,13 @@ export default function Theme() {
         
       </div>
 
-      {/* arts mini */}
+      {/* Theme sections */}
+      {themeSections.map((section, index) => (
       <SplitSection 
+          key={index}
         left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
-            <GlowingImage image={artsMini} />
+          <div className="relative md:h-full max-md:w-full aspect-square overflow-hidden rounded-4xl">
+              <GlowingImage image={section.image} />
           </div>
         }
         right={
@@ -68,157 +128,27 @@ export default function Theme() {
               className="font-display text-6xl font-bold mb-12 text-font-primary"
               data-animate
             >
-              Arts, Culture & Heritage
+                {section.title}
             </h1>
             <h2 
               className="text-justify text-weight-light text-font-secondary"
               data-animate
             >
               <ul className="list-disc list-inside space-y-3 text-left">
-                <li>Learning how arts and culture manifest in new forms with the emergence of technology</li>
-                <li>Loss of culture when traditions are becoming more modernised</li>
-                <li>Actions, both the government and we can take, to maintain arts and culture as an integral part of society</li>
-                <li>Strengthening our social identity through arts and culture</li>
-              </ul>
-
-            </h2>
-          </div>
-        }
-      />
-
-      {/* environment mini */}
-      <SplitSection 
-        left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
-            <GlowingImage image={sustainableMini} />
-          </div>
-        }
-        right={
-          <div className="flex flex-col">
-            <h1 
-              className="font-display text-6xl font-bold  mb-12 text-font-primary"
-              data-animate
-            >
-              Environment & Sustainability
-            </h1>
-            <h2 
-              className="font-sans text-justify text-weight-light text-font-secondary"
-              data-animate
-            >
-              <ul className="list-disc list-inside space-y-3 text-left">
-                <li>Progress in the green economy and technologies</li>
-                <li>Governmental policies to ensure sustainable development</li>
-                <li>Fostering environmental stewardship among citizens</li>
-                <li>Lower SES groups may be disproportionately affected during the pursuit of environmental sustainability</li>
+                  {section.content.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
               </ul>
             </h2>
           </div>
         }
-        
-        addClassName="bg-background-primary"
+          addClassName={`${index % 2 === 0 ? "bg-background-secondary" : "bg-background-primary"} py-32`}
       />
-
-      {/* regional and global affairs mini */}
-      <SplitSection 
-        left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
-            <GlowingImage image={miniAffair} />
-          </div>
-        }
-        right={
-          <div className="flex flex-col">
-            <h1 
-              className="font-display text-6xl font-bold  mb-12 text-font-primary"
-              data-animate
-            >
-              Regional and Global Affairs
-            </h1>
-            <h2 
-              className="font-sans text-justify text-weight-light text-font-secondary"
-              data-animate
-            >
-              <ul className="list-disc list-inside space-y-3 text-left">
-                <li>Understanding how rising geopolitical tensions and conflicts shape global stability, and their impact on small, interconnected states such as Singapore</li>
-                <li>Shift from multilateralism to unilaterism, and its implications on a rule-based world order</li>
-                <li>Exploring the role of international cooperation in addressing global challenges</li>
-                <li>How diplomacy and collective action can foster more stable and peaceful international relations</li>
-                <li>Reflecting on the role of individuals in mitigating the impacts of global conflicts on Singapore</li>
-              </ul>
-            </h2>
-          </div>
-        }
-      />
-
-      {/* innovation mini */}
-      <SplitSection 
-        left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
-            <GlowingImage image={techMini} />
-          </div>
-        }
-        right={
-          <div className="flex flex-col">
-            <h1 
-              className="font-display text-6xl font-bold  mb-12 text-font-primary"
-              data-animate
-            >
-              Innovation & AI
-            </h1>
-            <h2 
-              className="font-sans text-justify text-weight-light text-font-secondary"
-              data-animate
-            >
-              <ul className="list-disc list-inside space-y-3 text-left">
-                <li>AI boosts productivity in our economy and brings convenience to our daily lives</li>
-                <li>Tech advancements displace jobs and also diminish critical thinking</li>
-                <li>SG Smart Nation initiatives, and how we can innovate better ways to engage the elderly who were left behind, as they are unable to utilise new technologies</li>
-                <li>Combating AI Deepfakes</li>
-                <li>National AI Council being set up</li>
-              </ul>
-            </h2>
-          </div>
-        }
-        
-        addClassName="bg-background-primary"
-      />
-
-      {/* social mini */}
-      <SplitSection 
-        left={
-          <div className="relative h-full aspect-square overflow-hidden rounded-4xl my-32">
-            <GlowingImage image={socialMini} />
-          </div>
-        }
-        right={
-          <div className="flex flex-col">
-            <h1 
-              className="font-display text-6xl font-bold  mb-12 text-font-primary"
-              data-animate
-            >
-              Social Compact
-            </h1>
-            <h2 
-              className="font-sans text-justify text-weight-light text-font-secondary"
-              data-animate
-            >
-              <ul className="list-disc list-inside space-y-3 text-left">
-                <li>Equipping and empowering more youths to be able to voice out, participate, and push out initiatives to benefit the wider community.</li>
-                <li>Catalysing social mobility among marginalised groups</li>
-                <li>Policies that reduce the rich-poor divide to alleviate poverty, such as:
-                  <ul className="list-disc marker:text-font-tertiary/50 list-inside pl-6 space-y-1">
-                    <li>Education</li>
-                    <li>Grants & Subsidies</li>
-                  </ul>
-                </li>
-                <li>Identifying the disconnect between the needs of the marginalised groups of society and the existing aid provided</li>
-              </ul>
-            </h2>
-          </div>
-        }
-      />
+      ))}
 
       {/* footer */}
       <Footer />
     </div>
   );
 }
+

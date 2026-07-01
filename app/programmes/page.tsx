@@ -17,19 +17,7 @@ import ScheduleWidget from "@/components/schedule-widget";
 import type { DaySchedule } from "@/types/schedule"
 import type { ScheduleColour } from "@/types/schedule"
 
-import mrMockPic from "@/public/panelists/mock-yi-jun-cropped.png"
-import christy from "@/public/panelists/christy tan.jpeg"
-import james from "@/public/panelists/James CK Kok.png"
-import keith from "@/public/panelists/keith yap.webp"
-import khim from "@/public/panelists/Khim Tan.jpeg"
-import PIRAGATHESH from "@/public/panelists/PIRAGATHESH SUBRAMANIAN.jpg"
-import royston from "@/public/panelists/ROYSTON PHANG.png"
-import SARAFIAN from "@/public/panelists/SARAFIAN SALLEH.jpg"
-import TANG from "@/public/panelists/TANG WANZHEN.jpg"
-import walid from "@/public/panelists/walid abdullah.png"
-import YONG from "@/public/panelists/YONG MIN HO.png"
-import ZOE from "@/public/panelists/ZOE TEE.jpg"
-
+import { Panelists } from "@/components/panelists";
 
 export default function Programmes() {
 
@@ -58,7 +46,31 @@ export default function Programmes() {
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
         { time: '08 20', activities: ['Admin Briefing', 'Cross Winds Briefing', 'Group Time'] },
-        { time: '09 00', activities: ['Blow Wind Blow'] },
+        { 
+          time: '09 00', 
+          activities: [
+            "Blow Wind Blow \n[Regional & Global Affairs] \nOnce Upon a Tide Exhibition @ National Museum (09:00 - 11:00)"
+          ] 
+        },
+        {
+          time: '09 40',
+          activities: [
+            "Blow Wind Blow \n[Arts, Culture, Heritage] \nSelf-Guided Tour around Amoy Street Area (09:40 - 11:00)"
+          ]
+        },
+        {
+          time: '10 00',
+          activities: [
+            "Blow Wind Blow \n[Environment & Sustainability] \nEarth Observatory Tour (10:00 - 12:00)",
+            "Blow Wind Blow \n[Social Compact] \nPA @ NACLI (10:00 - 12:00)"
+          ]
+        },
+        {
+          time: '11 00',
+          activities: [
+            "Blow Wind Blow \n[Arts, Culture, Heritage] \nTelok Ayer Chinese Methodist Church Guided Tour (11:00 - 12:00)"
+          ]
+        },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Chimes Preparation'] },
         { time: '14 20', activities: ['Wind Chimes'] },
@@ -103,7 +115,33 @@ export default function Programmes() {
       colour: "purple",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
-        { time: '08 20', activities: ['Blow Wind Blow', 'Group Time', 'Admin Briefing'] },
+        { time: '08 20', activities: ['Group Time', 'Admin Briefing'] },
+        {
+          time: '09 40',
+          activities: [
+            "Blow Wind Blow \n[Arts, Culture, Heritage] \nSelf-Guided Tour around Amoy Street Area (09:40 - 11:00)"
+          ]
+        },
+        {
+          time: '10 00',
+          activities: [
+            "Blow Wind Blow \n[Environment & Sustainability] \nEarth Observatory Tour (10:00 - 12:00)"
+          ]
+        },
+        {
+          time: '10 30',
+          activities: [
+            "Blow Wind Blow \n[Regional & Global Affairs] \nChangi Airport Group (10:30 - 11:30)",
+            "Blow Wind Blow \n[Innovation and AI] \nSTAR Centre @ NUS (10:30 - 11:30)",
+            "Blow Wind Blow \n[Social Compact] \nPA @ NACLI (10:30 - 12:30)"
+          ]
+        },
+        {
+          time: '11 00',
+          activities: [
+            "Blow Wind Blow \n[Arts, Culture, Heritage] \nTelok Ayer Chinese Methodist Church Guided Tour (11:00 - 12:00)"
+          ]
+        },
         { time: '12 40', activities: ['Lunch'] },
         { time: '13 40', activities: ['Wind Breaker'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
@@ -173,69 +211,6 @@ export default function Programmes() {
     )
   }));
 
-  const panelistData =[
-    // {
-    //   name: "Mock Yi Jun",
-    //   description: "",
-    //   image: mrMockPic
-    // },
-    {
-      name: "christy tan",
-      description: "Managing Director, Senior Investment Strategist Franklin Templeton Institute, Templeton Asset Management Ltd",
-      image: christy
-    },
-    {
-      name: "James CK Kok",
-      description: "Head of Strategic Partnerships, AI Singapore",
-      image: james
-    },
-    {
-      name: "keith yap",
-      description: "President of LKYSPP Alumni Singapore Chapter | Podcaster",
-      image: keith
-    },
-    {
-      name: "Khim Tan",
-      description: "Head of Programmes at Access Singapore",
-      image: khim
-    },
-    {
-      name: "piragathesh subramanian",
-      description: "United Nations Youth Director",
-      image: PIRAGATHESH
-    },
-    {
-      name: "ROYSTON PHANG",
-      description: "Lead Facilitator @ SALTTWORKSHOP + JR | Adjunct Lecturer @ Nanyang Academy of Fine Arts | UX Designer",
-      image: royston
-    },
-    {
-      name: "SARAFIAN SALLEH",
-      description: "Heritage Activist | Engineering Consultant Licensed STB Tourist Guide | President of the Bugis Malay Society Singapore",
-      image: SARAFIAN
-    },
-    {
-      name: "TANG WANZHEN",
-      description: "General Manager, Water Reclamation (Plants) Department, Public Utilities Board (PUB)",
-      image: TANG
-    },
-    {
-      name: "walid jumblatt abdullah",
-      description: "Associate Professor in Political Science at Nanyang Technological University",
-      image: walid
-    },
-    {
-      name: "YONG MIN HO",
-      description: "Heritage Educator @urbanist.singapore",
-      image: YONG
-    },
-    {
-      name: "ZOE TEE",
-      description: "Senior Social Worker Deputy Head of Youth Department at Fei Yue Community Services",
-      image: ZOE
-    },
-  ]
-
   const backNextButtonStyles: string = 
   `
     text-3xl
@@ -290,116 +265,9 @@ export default function Programmes() {
 
       </div>
 
-      {/* keynote speaker */}
-      <div className="w-full bg-background-secondary">
-        <div className="max-w-7xl mx-auto px-8 pb-32">
-
-          {/* title of panel discussion */}
-          <div className="border-b border-background-tertiary max-w-7xl mx-auto px-8">
-
-            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 mt-16 font-bold text-font-primary w-full">
-              Wind Chimes
-            </h1>
-            <h2 data-animate className="font-display text-3xl mb-8 font-semibold text-font-primary w-full">
-              Panel Discussion
-            </h2>
-
-          </div>
-
-          {/* Keynote speaker */}
-          <div className="bg-background-secondary flex max-md:flex-col justify-between gap-8 items-center py-12">
-            <div className="relative w-[37vw] max-md:w-full aspect-875/700 ">
-              <Image
-                src={mrMockPic}
-                alt="Keynote Speaker"
-                fill
-                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
-              />
-            </div>
-
-            <div className="flex flex-col items-start">
-              <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary w-full">
-                Keynote Speaker
-              </h1>
-              <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
-                Mr Mock Yi Jun
-              </h2>
-              <h2 data-animate className="tracking-tighter text-font-primary w-full">
-                Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI
-              </h2>
-            </div>
-
-          </div>
-
-          {/* Keynote speaker paragraph */}
-          <div className="flex flex-col items-start border-t border-b border-background-tertiary w-full">
-            <div data-animate className="text-base text-font-primary w-full py-8">
-                Since 2016, Mr Mock Yi Jun has been Co-Founder and President of Advisory Singapore, a fully youth-led charity that has helped over 278,000 young Singaporeans from all walks of life make informed career choices. Advisory Singapore runs Singapore's largest pro bono careers-based mentorship programme for students, having delivered over 15,000 hours of mentorship since 2020. Mr Mock currently serves as a Senior Manager of the Quantum Policy and Strategy Unit at the Ministry of Digital Development and Information. His remarkable career journey and distinguished recognitions — including being named a #Generation17 Young Leader and a Queen's Young Leader — speak to his deep and enduring passion for leadership and service. Participants at the Y.LEAD Seminar 2026 will have the opportunity to draw inspiration from Mr Mock's broad and varied experiences across leadership advisory, youth empowerment, and both local and global service. 
-            </div>
-          </div>
-
-        </div>
-      </div>
 
 
-
-
-      {/* panelists */}
-      <div className="w-full bg-background-primary">
-        <div className="max-w-7xl mx-auto px-8">
-
-          {/* Panelists title */}
-          <div className="border-b border-background-tertiary max-w-7xl mx-auto px-8" >
-
-            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl my-16 font-bold text-font-primary w-full">
-              Panelists
-            </h1>
-            
-          </div>
-
-          {/* panelist cards */}
-          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-32 gap-x-16 gap-y-32 justify-center items-center pt-16 pb-32">
-            {
-              panelistData.map((data: any, index: any) => {
-                const isLoneLastElement = index === panelistData.length - 1 && index % 2 === 0;
-
-                return (
-                  <div key={index} className={`flex items-center gap-[6vw] justify-start ${isLoneLastElement ? "md:col-span-2 md:justify-center md:mx-auto md:max-w-xl" : ""}`}>
-
-                    {/* Image Wrapper */}
-                    <div data-animate className="relative h-[12vw] min-h-[100px] max-h-[200px] aspect-square rounded-full overflow-hidden shrink-0">
-                      <Image
-                        src={data.image}
-                        alt="panelist"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-
-                    {/* Text Wrapper */}
-                    <div className={`flex flex-col items-start min-w-0 ${isLoneLastElement ? "w-auto" : "w-[calc(100%-6vw-12vw)]"}`} >
-                      <h1 
-                        data-animate 
-                        className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary capitalize text-balance"
-                      >
-                        {data.name.toLowerCase()}
-                      </h1>
-                      <h2 
-                        data-animate 
-                        className="mb-6 text-font-primary text-balance"
-                      >
-                        {data.description} 
-                      </h2>
-                    </div>
-
-                  </div>
-                );
-              })
-            }
-          </div>
-
-        </div>
-      </div>
+      <Panelists/>
 
       <Footer />
     </div>

@@ -190,19 +190,20 @@ export default function Theme() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-y-8 gap-y-1 gap-x-12 text-sm md:text-base items-center">
-              {teacherCreditsList.map((item: any, index: any) => (
-                <React.Fragment key={index}>
+            {teacherCreditsList.map((item: any, index: any) => (
+              <React.Fragment key={index}>
 
-                  <div className="text-xl font-sans font-semibold max-md:pt-4">
-                    {item.role}
-                  </div>
-                  <div className="md:col-span-2">
-                    {item.names}
-                  </div>
+                <div className="text-xl font-sans font-semibold max-md:pt-4">
+                  {item.role}
+                </div>
+                <div className="md:col-span-2">
+                  {item.names}
+                </div>
 
-                </React.Fragment>
-              ))}
-            </div>
+              </React.Fragment>
+            ))}
+          </div>
+          
         </div>
 
       </div>

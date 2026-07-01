@@ -23,7 +23,7 @@ export default function ScheduleWidget({activities, color = 'blue' }: ScheduleWi
           <ul className='list-disc list-inside text-left space-y-3'>
 
             {activities.map((activity, index) => (
-              <li key={index} className="text-sm md:text-base leading-tight">
+              <li key={index} className="text-sm md:text-base leading-tight whitespace-pre-line">
                 {activity}
               </li>
             ))}
