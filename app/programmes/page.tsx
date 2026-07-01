@@ -18,6 +18,7 @@ import type { DaySchedule } from "@/types/schedule"
 import type { ScheduleColour } from "@/types/schedule"
 
 import { Panelists } from "@/components/panelists";
+import { BlowWindBlow } from "@/components/blow-wind-blow";
 
 export default function Programmes() {
 
@@ -264,8 +265,6 @@ export default function Programmes() {
         </div>
 
       </div>
-
-
 
       <Panelists/>
 
