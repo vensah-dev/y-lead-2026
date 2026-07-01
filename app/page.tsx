@@ -221,6 +221,29 @@ export default function Home() {
           addClassName="bg-background-primary pb-32 "
         />
 
+        {/* hiodden here */}
+        <div className="w-screen bg-background-secondary hidden">
+          <div className="md:max-w-7xl w-full px-8 mx-auto py-32">
+            <div className="flex flex-col items-center pb-24">
+              <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
+                Participants' Grouping
+              </h1>
+            </div>
+
+            <div className="iframe-container mx-auto md:aspect-3/4 aspect-9/16 md:h-[70vw] w-100% rounded-3xl overflow-hidden" data-animate>
+              <iframe
+                src="https://drive.google.com/file/d/1Jlpeh4mvoXCnOuvs05DVuVuwc-kpDhRs/preview"
+                title="External Content Layout"
+                width="100%"
+                height="100%"
+                loading="eager"
+                sandbox="allow-scripts allow-same-origin"
+                style={{ border: 'none' }}
+              />
+            </div>
+          </div>
+        </div>
+
 
       {/* footer */}
       <Footer />
