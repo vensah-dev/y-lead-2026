@@ -124,11 +124,11 @@ export const BlowWindBlow = () => {
             
             {track.activities.map((activity, activityIndex) => (
               <div key={activityIndex}>
-                <h3 className="xl:text-4xl text-3xl mb-4 font-display text-font-primary pt-8">{activity.title}</h3>
+                <h3 className="xl:text-4xl text-3xl mb-6 font-display text-font-primary pt-8">{activity.title}</h3>
                 <p className="text-font-primary">{activity.description}</p>
             
                 <div>
-                  <h4 className="text-lg text-font-primary font-bold mb-2">Objectives:</h4>
+                  <h4 className="text-lg text-font-primary font-bold mt-4 mb-2">Objectives:</h4>
                   <ul className="list-disc list-inside pl-6">
                     {activity.objectives.map((objective, objectiveIndex) => (
                       <li key={objectiveIndex} className="text-font-primary">

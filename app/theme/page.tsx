@@ -11,11 +11,11 @@ import heroBG from "@/public/images/hero-bg.png";
 import heroFG from "@/public/images/hero-fg.png";
 import yleadIcon from "@/public/icons/ylead-icon.png";
 import icon from "@/public/icons/icon.svg";
-import artsMini from "@/public/images/arts-mini.png";
-import socialMini from "@/public/images/social-mini.png";
-import sustainableMini from "@/public/images/sustainable-mini.png";
-import miniAffair from "@/public/images/mini-affair.png";
-import techMini from "@/public/images/tech-mini.png";
+import artsMini from "@/public/images/arts-mini.avif";
+import socialMini from "@/public/images/social-mini.avif";
+import sustainableMini from "@/public/images/sustainable-mini.avif";
+import miniAffair from "@/public/images/mini-affair.avif";
+import techMini from "@/public/images/tech-mini.avif";
 
 
 import { ScrollAnimation } from "@/components/scroll-animation";

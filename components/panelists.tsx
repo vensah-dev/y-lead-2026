@@ -6,18 +6,18 @@ import zephyrIcon from "@/public/icons/icon.svg";
 import Image from "next/image";
 import Link from 'next/link';
 
-import mrMockPic from "@/public/panelists/mock-yi-jun-cropped.png"
-import christy from "@/public/panelists/christy tan.jpeg"
-import james from "@/public/panelists/James CK Kok.png"
-import keith from "@/public/panelists/keith yap.webp"
-import khim from "@/public/panelists/Khim Tan.jpeg"
-import PIRAGATHESH from "@/public/panelists/PIRAGATHESH SUBRAMANIAN.jpg"
-import royston from "@/public/panelists/ROYSTON PHANG.png"
-import SARAFIAN from "@/public/panelists/SARAFIAN SALLEH.jpg"
-import TANG from "@/public/panelists/TANG WANZHEN.jpg"
-import walid from "@/public/panelists/walid abdullah.png"
-import YONG from "@/public/panelists/YONG MIN HO.png"
-import ZOE from "@/public/panelists/ZOE TEE.jpg"
+import mrMockPic from "@/public/panelists/mock-yi-jun-cropped.avif"
+import christy from "@/public/panelists/christy tan.avif"
+import james from "@/public/panelists/James CK Kok.avif"
+import keith from "@/public/panelists/keith yap.avif"
+import khim from "@/public/panelists/Khim Tan.avif"
+import PIRAGATHESH from "@/public/panelists/PIRAGATHESH SUBRAMANIAN.avif"
+import royston from "@/public/panelists/ROYSTON PHANG.avif"
+import SARAFIAN from "@/public/panelists/SARAFIAN SALLEH.avif"
+import TANG from "@/public/panelists/TANG WANZHEN.avif"
+import walid from "@/public/panelists/walid abdullah.avif"
+import YONG from "@/public/panelists/YONG MIN HO.avif"
+import ZOE from "@/public/panelists/ZOE TEE.avif"
 
 export const Panelists = () => {
   const panelistData =[
@@ -101,13 +101,13 @@ export const Panelists = () => {
           </div>
 
           {/* Keynote speaker */}
-          <div className="bg-background-secondary flex max-md:flex-col justify-between gap-8 items-center py-12">
+          <div className="bg-background-secondary flex max-md:flex-col justify-between gap-8 items-center py-12" data-animate>
             <div className="relative w-[37vw] max-md:w-full aspect-875/700 ">
               <Image
                 src={mrMockPic}
                 alt="Keynote Speaker"
                 fill
-                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/10"
+                className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/7"
               />
             </div>
 
@@ -153,10 +153,10 @@ export const Panelists = () => {
                 const isLoneLastElement = index === panelistData.length - 1 && index % 2 === 0;
 
                 return (
-                  <div key={index} className={`flex items-center gap-[6vw] justify-start ${isLoneLastElement ? "md:col-span-2 md:justify-center md:mx-auto md:max-w-xl" : ""}`}>
+                  <div data-animate key={index} className={`flex items-center gap-[6vw] justify-start ${isLoneLastElement ? "md:col-span-2 md:justify-center md:mx-auto md:max-w-xl" : ""}`}>
 
                     {/* Image Wrapper */}
-                    <div data-animate className="relative h-[12vw] min-h-[100px] max-h-[200px] aspect-square rounded-full overflow-hidden shrink-0">
+                    <div className="relative h-[12vw] min-h-[100px] max-h-[200px] aspect-square rounded-full overflow-hidden shrink-0">
                       <Image
                         src={data.image}
                         alt="panelist"
@@ -168,13 +168,11 @@ export const Panelists = () => {
                     {/* Text Wrapper */}
                     <div className={`flex flex-col items-start min-w-0 ${isLoneLastElement ? "w-auto" : "w-[calc(100%-6vw-12vw)]"}`} >
                       <h1 
-                        data-animate 
                         className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary capitalize text-balance"
                       >
                         {data.name.toLowerCase()}
                       </h1>
                       <h2 
-                        data-animate 
                         className="mb-6 text-font-primary text-balance"
                       >
                         {data.description} 

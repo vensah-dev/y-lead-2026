@@ -14,7 +14,7 @@ import icon from "@/public/icons/icon.svg";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
-import chairspic from "@/public/images/chairs-pic.png";
+import chairspic from "@/public/images/chairs-pic.avif";
 
 import Link from "next/link";
 
