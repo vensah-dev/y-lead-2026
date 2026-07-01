@@ -151,7 +151,7 @@ export default function Home() {
                   text={
                     <>More about the theme</>
                   } 
-                  href="/about/organising-committee" 
+                  href="/theme" 
                 />
                 
                 <InstagramButton href="https://www.instagram.com/p/DZrD5LpD7ZE/?img_index=2"/>
