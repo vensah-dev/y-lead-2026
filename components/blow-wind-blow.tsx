@@ -105,15 +105,15 @@ export const BlowWindBlow = () => {
 
   return (
     <div>
-      <div className="w-screen">
-        <div className="bg-background-secondary border-b border-background-tertiary " >
-
-          <div className="max-w-7xl mx-auto px-8 ">
-            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl py-16 font-bold text-font-primary w-full">
-              Blow Wind Blow
-            </h1>
-          </div>
-        
+      <div className="w-screen bg-background-secondary">
+        <div className="max-w-7xl px-8 mx-auto">
+          <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl pt-16 pb-6 font-bold text-font-primary w-full">
+            Blow Wind Blow
+          </h1>
+          <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary w-full">
+            Investigative Journey
+          </h2>
+          <div className="bg-background-secondary border-b border-background-tertiary" />
         </div>
       </div>
 
