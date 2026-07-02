@@ -10,6 +10,7 @@ import TANG from "@/public/images/panelists/TANG WANZHEN.avif"
 import walid from "@/public/images/panelists/walid abdullah.avif"
 import YONG from "@/public/images/panelists/YONG MIN HO.avif"
 import ZOE from "@/public/images/panelists/ZOE TEE.avif"
+import phoebe from "@/public/images/panelists/phoebe-scott.avif"
 
 export const panelistData = [
   {
@@ -77,5 +78,11 @@ export const panelistData = [
     "description": "Senior Social Worker Deputy Head of Youth Department at Fei Yue Community Services",
     "image": ZOE,
     "bio": "Zoe is currently a senior social worker and deputy head of department at Fei Yue Community Services leading the Integrated Service Provider team, Hidden Youth Outreach Service team and YouthGO! Outreach team.     Previously, Zoe was involved in portfolios in the Ministry of Social and Family Development relating to youth at risk and was a probation officer. She was also in a task force that aimed to revamp the regime in a semi-structure youth-at-risk hostel. Subsequently, her job scope involved indirect social work practice such as operational policies relating to child welfare such as the Family Guidance Order.     Her contribution to her division in terms of Restorative Practice led to her team being awarded the MSF Star Service and Service Excellence Award in 2017 and 2018. She was also awarded the Promising Social Worker Award in 2018 conferred by the President of Singapore. Her team in Child Welfare was also awarded the Public Service Transformation Award in 2021, this time for the team’s innovative spirit in implementing the pre-FGO services in 2020 during the height of the Covid 19 pandemic.  Zoe’s team in addressing youth social isolation issue in Singapore was recently awarded the Outstanding Social Work Team Award 2026 and were featured on CNA Insider Shutdown.   Today, she continues to shape the future of the sector by sharing her expertise as an adult educator at the Social Service Institute and adjunct lecturer at NUS, bridging the gap between frontline practice, knowledge, and systemic advocacy."
-  }
+  },
+  {
+    "name": "Phoebe Scott",
+    "description": "Senior Curator at National Gallery Singapore",
+    "image": phoebe,
+    "bio": "Phoebe Scott is Senior Curator at National Gallery Singapore, specialising in modern and contemporary Southeast Asian art with a focus on 20th-century Vietnamese art, the subject of her PhD research. Her curatorial work is defined by an interest in material histories and transnational exchange, seen in exhibitions like Radiant Material: A Dialogue in Vietnamese Lacquer Painting (2017) and Between Declarations and Dreams (2015), which she co-curated. She researches how colonial pedagogy and Parisian networks shaped Vietnamese artists in the 1930s–1940s, exploring tensions between colonial and cosmopolitan identities. Recent projects include co-leading Into the Modern: Impressionism from the Museum of Fine Arts, Boston, curating it with a goal of transforming the way Singaporeans see Impressionism in relation to Singapore’s context today. Through In-Gallery Sharing Sessions and her writing, she brings scholarly rigor to public engagement, highlighting technique, narrative, and the social contexts behind artworks."
+  },
 ]

@@ -10,7 +10,7 @@ import heroFG from "@/public/images/hero-fg.avif";
 import potraitHeroBG from "@/public/images/potrait-hero-bg.avif";
 import potraitHeroFG from "@/public/images/potrait-hero-fg.avif";
 import yleadIcon from "@/public/icons/ylead-icon.avif";
-import icon from "@/public/icons/icon-512.avif";
+import icon from "@/public/icons/icon-1024.avif";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";

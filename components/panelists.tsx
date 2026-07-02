@@ -90,7 +90,7 @@ export const Panelists = () => {
           </div>
 
           {/* panelist cards */}
-          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-32 gap-x-16 gap-y-32 justify-center items-center pt-16 pb-32">
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:gap-32 gap-x-16 gap-y-32 justify-center items-center py-16 border-b border-background-tertiary">
             {
               panelistData.map((data: any, index: any) => {
                 const isLoneLastElement = index === panelistData.length - 1 && index % 2 === 0;
@@ -127,7 +127,7 @@ export const Panelists = () => {
             }
           </div>
 
-          <div className="max-w-xl mx-auto flex justify-center items-center pb-32" data-animate>
+          <div className="max-w-xl mx-auto flex justify-center items-center pb-32 pt-16" data-animate>
             <PrimaryButton
               text={
                 <>More about the Panelists</>

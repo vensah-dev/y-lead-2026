@@ -6,25 +6,12 @@ import zephyrIcon from "@/public/icons/icon.svg";
 import Image from "next/image";
 import Link from 'next/link';
 
-import mrMockPic from "@/public/images/panelists/mock-yi-jun-cropped.avif"
-import christy from "@/public/images/panelists/christy tan.avif"
-import james from "@/public/images/panelists/James CK Kok.avif"
-import keith from "@/public/images/panelists/keith yap.avif"
-import khim from "@/public/images/panelists/Khim Tan.avif"
-import PIRAGATHESH from "@/public/images/panelists/PIRAGATHESH SUBRAMANIAN.avif"
-import royston from "@/public/images/panelists/ROYSTON PHANG.avif"
-import SARAFIAN from "@/public/images/panelists/SARAFIAN SALLEH.avif"
-import TANG from "@/public/images/panelists/TANG WANZHEN.avif"
-import walid from "@/public/images/panelists/walid abdullah.avif"
-import YONG from "@/public/images/panelists/YONG MIN HO.avif"
-import ZOE from "@/public/images/panelists/ZOE TEE.avif"
-import { PrimaryButton } from '@/components/primary-button';
-import { SecondaryButton } from '@/components/secondary-button';
 import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 
 import { panelistData } from "@/lib/panelist-data";
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function AboutPanelists() {
   return (
@@ -80,6 +67,8 @@ export default function AboutPanelists() {
               );
             })
           }
+
+        <Footer />
 
       </div>
   );
