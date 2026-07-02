@@ -83,7 +83,7 @@ export const panelistData = [
   },
   {
     "name": "Phoebe Scott",
-    "description": "SENIOR CURATOR, NATIONAL GALLERY SINGAPORE",
+    "description": "SENIOR CURATOR, \nNATIONAL GALLERY SINGAPORE",
     "image": phoebe,
     "bio": "Phoebe Scott is Senior Curator at National Gallery Singapore, specialising in modern and contemporary Southeast Asian art with a focus on 20th-century Vietnamese art, the subject of her PhD research. Her curatorial work is defined by an interest in material histories and transnational exchange, seen in exhibitions like Radiant Material: A Dialogue in Vietnamese Lacquer Painting (2017) and Between Declarations and Dreams (2015), which she co-curated. She researches how colonial pedagogy and Parisian networks shaped Vietnamese artists in the 1930s–1940s, exploring tensions between colonial and cosmopolitan identities. Recent projects include co-leading Into the Modern: Impressionism from the Museum of Fine Arts, Boston, curating it with a goal of transforming the way Singaporeans see Impressionism in relation to Singapore’s context today. Through In-Gallery Sharing Sessions and her writing, she brings scholarly rigor to public engagement, highlighting technique, narrative, and the social contexts behind artworks."
   },
