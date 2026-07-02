@@ -116,7 +116,7 @@ export const Panelists = () => {
                         {data.name}
                       </h1>
                       <h2 
-                        className="mb-6 text-font-primary text-balance"
+                        className="mb-6 text-font-primary text-balance whitespace-pre-line"
                       >
                         {data.description} 
                       </h2>
