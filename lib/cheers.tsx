@@ -142,7 +142,7 @@ export const cheers = [
       bgColor: "bg-red-500/20",
       
       title: "Fam L Cheer",
-      content: "(RV Bersah clapping)\nEhhh ya! Fam L Bersah!\nEhhh ya! Fam L Bersah!\n\nFam L Fam L we are the best!\nFrom north to east,\nAnd south to west!\n\nSay get get get up now, say get get get up now (Fam L!)\nSay get get get up now, say get get get up now (Fam L!)\n\nSay who’s the best? Of course it’s L (L!)\nBetter than the rest! Of course it’s L (L!)\nWho’s gonna win? Let’s go fam L (L!)\n\nL Fam E, L, L Fam E\nL Fam A, L, L Fam A\nL Fam D, L, L Fam D\nWin Fam L, win win Fam L\n\n(Everyone to gather, similar to Kemama)\nEhhh, Fam L!"
+      content: "(Tap leg 2x and clap 1x throughout)\nFam L Fam L we are the best!\nFrom north to east,\nAnd south to west!\n\nSay get get get up now, say get get get up now (Fam L!)\nSay get get get up now, say get get get up now (Fam L!)\n\nSay who’s the best? Of course it’s L (L!)\nBetter than the rest! Of course it’s L (L!)\nWho’s gonna win? Let’s go fam L (L!)\n\nL Fam E, L, L Fam E\nL Fam A, L, L Fam A\nL Fam D, L, L Fam D\nWin Fam L, win win Fam L\n\n(Everyone to gather, similar to Kemama)\nEhhh, Fam L!"
   },
   {
       key: "fam-e-cheer",
@@ -158,7 +158,7 @@ export const cheers = [
       bgColor: "bg-pink-500/20",
 
       title: "Fam A Cheer",
-      content: "(All chant, slow and strong)\n\nBoom! Boom! Hear that sound?\nFam A’s comin’, shake the ground!\n\nWe don’t run, we don’t play,\nWe bring thunder every day!\n\nBoom like lightning, bold and bright,\nFam A shines day and night!\n\nFast or slow, near or far,\nEveryone knows who we are!\n\n(Everyone to gather, similar to Kemama)\nFam A, Fam A, awo!"
+      content: "Boom! Boom! Hear that sound? Fam A's comin', shake the ground!\n\nWe don't run, we don't play, We bring the thunder every day!\n\nBoom like lightning, bold and bright, Fam A shines through day and night!\n\nFast or slow, near or far! Everyone knows who we are!\n\nFam A. Fam A seize the day. Let's go win this, go Fam Ayee! (hit the woah)"
   },
   {
       key: "fam-d-cheer",
@@ -166,6 +166,6 @@ export const cheers = [
       bgColor: "bg-blue-500/20",
 
       title: "Fam D Cheer",
-      content: "(Stomp, stomp, clap)\nFam D! Fam D! Run this place!\nD strong, D bold, set the pace!\nD high, D low, we steal the show!\nFam D shines, watch us go!\n\nPoint at each fam)\nA for annoying, just go home!\nL for lost, nowhere to go!\nE for envious, just a stare!\n\n(Stomp, stomp, clap)\nD for driven, D for dare\nFam D wins the spotlight’s right!\n\n(Stomp before each sentence)\nPower! Power!\nWinner! Winner!\nFire! Fire!\nHigher! Higher!\n\n(Everyone to gather, similar to Kemama)\nEhhh, Fam D!"
+      content: "(Stomp, stomp, clap)\nFam D! Fam D! Run this place!\nD strong, D bold, set the pace!\nD high, D low, we steal the show!\nFam D shines, watch us go!\n\n(Point at each fam)\nA for annoying, just go home!\nL for lost, nowhere to go!\nE for envious, just a stare!\n\n(Stomp, stomp, clap)\nD for driven, D for dare\nFam D wins the spotlight’s right!\n\n(clap 2 times after each sentence)\nPower! Power!\nWinner! Winner!\nFire! Fire!\nHigher! Higher!\n\n(Everyone to gather, similar to Kemama)\nEhhh, Fam D!"
   }
 ];
