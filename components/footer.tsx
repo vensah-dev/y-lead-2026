@@ -2,7 +2,7 @@ import React from 'react';
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import zephyrIcon from "@/public/icons/icon.svg";
+import zephyrIcon from "@/public/icons/icon-512.avif";
 import Image from "next/image";
 import Link from 'next/link';
 

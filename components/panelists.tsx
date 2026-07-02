@@ -6,18 +6,20 @@ import zephyrIcon from "@/public/icons/icon.svg";
 import Image from "next/image";
 import Link from 'next/link';
 
-import mrMockPic from "@/public/panelists/mock-yi-jun-cropped.avif"
-import christy from "@/public/panelists/christy tan.avif"
-import james from "@/public/panelists/James CK Kok.avif"
-import keith from "@/public/panelists/keith yap.avif"
-import khim from "@/public/panelists/Khim Tan.avif"
-import PIRAGATHESH from "@/public/panelists/PIRAGATHESH SUBRAMANIAN.avif"
-import royston from "@/public/panelists/ROYSTON PHANG.avif"
-import SARAFIAN from "@/public/panelists/SARAFIAN SALLEH.avif"
-import TANG from "@/public/panelists/TANG WANZHEN.avif"
-import walid from "@/public/panelists/walid abdullah.avif"
-import YONG from "@/public/panelists/YONG MIN HO.avif"
-import ZOE from "@/public/panelists/ZOE TEE.avif"
+import mrMockPic from "@/public/images/panelists/mock-yi-jun-cropped.avif"
+import christy from "@/public/images/panelists/christy tan.avif"
+import james from "@/public/images/panelists/James CK Kok.avif"
+import keith from "@/public/images/panelists/keith yap.avif"
+import khim from "@/public/images/panelists/Khim Tan.avif"
+import PIRAGATHESH from "@/public/images/panelists/PIRAGATHESH SUBRAMANIAN.avif"
+import royston from "@/public/images/panelists/ROYSTON PHANG.avif"
+import SARAFIAN from "@/public/images/panelists/SARAFIAN SALLEH.avif"
+import TANG from "@/public/images/panelists/TANG WANZHEN.avif"
+import walid from "@/public/images/panelists/walid abdullah.avif"
+import YONG from "@/public/images/panelists/YONG MIN HO.avif"
+import ZOE from "@/public/images/panelists/ZOE TEE.avif"
+import { PrimaryButton } from './primary-button';
+import { SecondaryButton } from './secondary-button';
 
 export const Panelists = () => {
   const panelistData =[
@@ -178,12 +180,20 @@ export const Panelists = () => {
                         {data.description} 
                       </h2>
                     </div>
-
                   </div>
                 );
               })
             }
           </div>
+
+          {/* <div className="max-w-xl mx-auto flex justify-center items-center pb-32">
+            <PrimaryButton
+              text={
+                <>More about the Panelists</>
+              }
+              href="/about/panelists"
+            />
+          </div> */}
 
         </div>
       </div>

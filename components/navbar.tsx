@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-import icon from '@/public/icons/icon.svg';
+import icon from '@/public/icons/icon-512.avif';
 
 import { navItems } from '@/lib/navbar';
 
