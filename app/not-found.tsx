@@ -14,7 +14,7 @@ export default function NotFound() {
 
             <div className="text-6xl font-bold font-sans text-accent-dark">404</div>
 
-            <Link href="/" className='text-accent-dark'>Return Home</Link>
+            <Link href="/" className='text-accent-dark'>Go to About</Link>
         </div>
     )
 }

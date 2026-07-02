@@ -23,7 +23,7 @@ import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 
-export default function Theme() {
+export default function OC() {
   const prefix = process.env.NODE_ENV === 'production' ? '' : '';
 
   const creditsList = [

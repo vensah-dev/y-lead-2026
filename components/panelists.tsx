@@ -21,69 +21,10 @@ import ZOE from "@/public/images/panelists/ZOE TEE.avif"
 import { PrimaryButton } from './primary-button';
 import { SecondaryButton } from './secondary-button';
 
+import { panelistData } from "@/lib/panelist-data";
+
 export const Panelists = () => {
-  const panelistData =[
-    // {
-    //   name: "Mock Yi Jun",
-    //   description: "",
-    //   image: mrMockPic
-    // },
-    {
-      name: "christy tan",
-      description: "Managing Director, Senior Investment Strategist Franklin Templeton Institute, Templeton Asset Management Ltd",
-      image: christy
-    },
-    {
-      name: "James CK Kok",
-      description: "Head of Strategic Partnerships, AI Singapore",
-      image: james
-    },
-    {
-      name: "keith yap",
-      description: "President of LKYSPP Alumni Singapore Chapter | Podcaster",
-      image: keith
-    },
-    {
-      name: "Khim Tan",
-      description: "Head of Programmes at Access Singapore",
-      image: khim
-    },
-    {
-      name: "piragathesh subramanian",
-      description: "United Nations Youth Director",
-      image: PIRAGATHESH
-    },
-    {
-      name: "ROYSTON PHANG",
-      description: "Lead Facilitator @ SALTTWORKSHOP + JR | Adjunct Lecturer @ Nanyang Academy of Fine Arts | UX Designer",
-      image: royston
-    },
-    {
-      name: "SARAFIAN SALLEH",
-      description: "Heritage Activist | Engineering Consultant Licensed STB Tourist Guide | President of the Bugis Malay Society Singapore",
-      image: SARAFIAN
-    },
-    {
-      name: "TANG WANZHEN",
-      description: "General Manager, Water Reclamation (Plants) Department, Public Utilities Board (PUB)",
-      image: TANG
-    },
-    {
-      name: "walid jumblatt abdullah",
-      description: "Associate Professor in Political Science at Nanyang Technological University",
-      image: walid
-    },
-    {
-      name: "YONG MIN HO",
-      description: "Heritage Educator @urbanist.singapore",
-      image: YONG
-    },
-    {
-      name: "ZOE TEE",
-      description: "Senior Social Worker Deputy Head of Youth Department at Fei Yue Community Services",
-      image: ZOE
-    },
-  ]
+
   return (
 
       <>
@@ -186,14 +127,14 @@ export const Panelists = () => {
             }
           </div>
 
-          {/* <div className="max-w-xl mx-auto flex justify-center items-center pb-32">
+          <div className="max-w-xl mx-auto flex justify-center items-center pb-32" data-animate>
             <PrimaryButton
               text={
                 <>More about the Panelists</>
               }
               href="/about/panelists"
             />
-          </div> */}
+          </div>
 
         </div>
       </div>
