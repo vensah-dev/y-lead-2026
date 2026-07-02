@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScrollAnimation } from './scroll-animation';
 
 interface Activity {
   title: string;
@@ -105,6 +106,8 @@ export const BlowWindBlow = () => {
 
   return (
     <div>
+      <ScrollAnimation />
+
       <div className="w-screen bg-background-secondary">
         <div className="max-w-7xl px-8 mx-auto">
           <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl pt-16 pb-6 font-bold text-font-primary w-full">
@@ -119,17 +122,17 @@ export const BlowWindBlow = () => {
 
       {scheduleData.map((track, index) => (
         <section key={index} className={`${index%2 === 0 ? "bg-background-secondary" : "bg-background-primary"}`}>
-          <div className={`max-w-7xl px-8 mx-auto ${index == 0 ? "pb-32 pt-12":"py-32"}`}>
-            <h2 className="xl:text-5xl text-4xl font-display font-bold mb-4">{track.category}</h2>
+          <div data-animate className={`max-w-7xl px-8 mx-auto ${index == 0 ? "pb-32 pt-12":"py-32"}`}>
+            <h2 data-animate className="xl:text-5xl text-4xl font-display font-bold mb-4">{track.category}</h2>
             
             {track.activities.map((activity, activityIndex) => (
               <div key={activityIndex}>
-                <h3 className="xl:text-4xl text-3xl mb-6 font-display text-font-primary pt-8">{activity.title}</h3>
-                <p className="text-font-primary">{activity.description}</p>
+                <h3 className="xl:text-4xl text-3xl mb-6 font-display text-font-primary pt-8" data-animate>{activity.title}</h3>
+                <p className="text-font-primary" data-animate>{activity.description}</p>
             
-                <div>
-                  <h4 className="text-lg text-font-primary font-bold mt-4 mb-2">Objectives:</h4>
-                  <ul className="list-disc list-inside pl-6">
+                <div data-animate>
+                  <h4 data-animate className="text-lg text-font-primary font-bold mt-4 mb-2">Objectives:</h4>
+                  <ul data-animate className="list-disc list-inside pl-6">
                     {activity.objectives.map((objective, objectiveIndex) => (
                       <li key={objectiveIndex} className="text-font-primary">
                         {objective}

@@ -28,7 +28,7 @@ export default function AboutPanelists() {
             panelistData.map((data: any, index: any) => {
 
               return (
-                <div key={index} className={`${index % 2 == 1 ? 'bg-background-secondary' : 'bg-background-primary'} py-32 w-screen`} data-animate>
+                <div key={index} className={`${index % 2 == 1 ? 'bg-background-secondary' : 'bg-background-primary'} py-32 w-screen`}>
 
                   <SplitSection
                     left={
@@ -57,7 +57,7 @@ export default function AboutPanelists() {
                   />
 
                   <div className="max-w-7xl mx-auto px-8 mt-32 border-b border-t border-background-tertiary">
-                    <h1 data-animate className="py-8 text-font-primary">
+                    <h1 data-animate className="py-8 text-font-primary whitespace-pre-line">
                       {data.bio}
                     </h1>
 

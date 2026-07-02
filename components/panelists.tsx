@@ -62,7 +62,7 @@ export const Panelists = () => {
                 Mr Mock Yi Jun
               </h2>
               <h2 data-animate className="tracking-tighter text-font-primary w-full">
-                Co-founder and President of Advisory Singapore, <br/>Senior Manager of the Quantum Policy and Strategy Unit at MDDI
+                Co-founder and President of Advisory Singapore
               </h2>
             </div>
 
@@ -111,9 +111,9 @@ export const Panelists = () => {
                     {/* Text Wrapper */}
                     <div className={`flex flex-col items-start min-w-0 ${isLoneLastElement ? "w-auto" : "w-[calc(100%-6vw-12vw)]"}`} >
                       <h1 
-                        className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary capitalize text-balance"
+                        className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary text-balance"
                       >
-                        {data.name.toLowerCase()}
+                        {data.name}
                       </h1>
                       <h2 
                         className="mb-6 text-font-primary text-balance"

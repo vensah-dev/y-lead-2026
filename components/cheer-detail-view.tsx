@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import Navbar from './navbar';
 import Footer from './footer';
+import { ScrollAnimation } from './scroll-animation';
 
 const CheerDetailView = (
   {
@@ -12,6 +13,7 @@ const CheerDetailView = (
   }) => {
   return (
     <div>
+        <ScrollAnimation />
         <Navbar />
         <div className="overflow-hidden relative min-h-screen">
 
@@ -35,10 +37,10 @@ const CheerDetailView = (
             </div>
 
             <div className="relative h-full max-w-7xl w-wrap mx-auto mt-32 p-8">
-                <h1 className="text-7xl font-bold mb-8">
+                <h1 className="text-7xl font-bold mb-8" data-animate>
                     {cheer.title}
                 </h1>
-                <h1 className="whitespace-pre-line text-base text-font-secondary w-wrap mb-32">
+                <h1 className="whitespace-pre-line text-base text-font-secondary w-wrap mb-32" data-animate>
                     {cheer.content}
                 </h1>
             </div>
