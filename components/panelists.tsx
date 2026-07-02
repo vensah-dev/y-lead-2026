@@ -83,7 +83,7 @@ export const Panelists = () => {
           {/* Panelists title */}
           <div className="border-b border-background-tertiary max-w-7xl mx-auto px-8" >
 
-            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl my-16 font-bold text-font-primary w-full">
+            <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mt-16 mb-8 font-bold text-font-primary w-full">
               Panelists
             </h1>
             

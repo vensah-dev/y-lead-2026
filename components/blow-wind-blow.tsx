@@ -119,7 +119,7 @@ export const BlowWindBlow = () => {
 
       {scheduleData.map((track, index) => (
         <section key={index} className={`${index%2 === 0 ? "bg-background-secondary" : "bg-background-primary"}`}>
-          <div className="max-w-7xl px-8 mx-auto py-32">
+          <div className={`max-w-7xl px-8 mx-auto ${index == 0 ? "pb-32 pt-12":"py-32"}`}>
             <h2 className="xl:text-5xl text-4xl font-display font-bold mb-4">{track.category}</h2>
             
             {track.activities.map((activity, activityIndex) => (
