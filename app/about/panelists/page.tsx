@@ -47,7 +47,7 @@ export default function AboutPanelists() {
                         <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl mb-6 font-bold text-font-primary capitalize">
                           {data.name.toLowerCase()}
                         </h1>
-                        <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary">
+                        <h2 data-animate className="font-display text-3xl mb-6 font-semibold text-font-primary whitespace-pre-line">
                           {data.description}
                         </h2>
                       </div>
