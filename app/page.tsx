@@ -222,7 +222,7 @@ export default function Home() {
         />
 
         {/* hiodden here */}
-        <div className="w-screen bg-background-secondary hidden">
+        <div className="w-screen bg-background-secondary">
           <div className="md:max-w-7xl w-full px-8 mx-auto py-32">
             <div className="flex flex-col items-center pb-24">
               <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
