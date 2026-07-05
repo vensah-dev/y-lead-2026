@@ -232,9 +232,9 @@ export default function Home() {
 
             <GlowingEmbed embedUrl="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0" />
 
-            {/* <div className="w-fit mx-auto pt-24">
+            <div className="w-fit mx-auto pt-24">
               <PrimaryButton text="More videos" href="/media"/>
-            </div> */}
+            </div>
 
           </div>
         </div>
