@@ -15,6 +15,7 @@ import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 import chairspic from "@/public/images/chairs-pic.avif";
+import GlowingEmbed from "@/components/glowing-embed";
 
 import Link from "next/link";
 
@@ -223,45 +224,32 @@ export default function Home() {
 
         <div className="w-screen bg-background-secondary">
           <div className="md:max-w-7xl w-full px-8 mx-auto py-32">
-            <div className="flex flex-col items-center pb-24">
+            <div className="flex flex-col items-center pb-32">
               <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
                 Y.LEAD Music Video
               </h1>
             </div>
 
-            <div className="iframe-container mx-auto aspect-video w-100% rounded-3xl overflow-hidden" data-animate>
-              <iframe
-                src="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"
-                title="External Content Layout"
-                width="100%"
-                height="100%"
-                loading="eager"
-                sandbox="allow-scripts allow-same-origin"
-                style={{ border: 'none' }}
-              />
-            </div>
+            <GlowingEmbed embedUrl="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0" />
+
+            {/* <div className="w-fit mx-auto pt-24">
+              <PrimaryButton text="More videos" href="/media"/>
+            </div> */}
+
           </div>
         </div>
 
         <div className="w-screen bg-background-primary">
           <div className="md:max-w-7xl w-full px-8 mx-auto py-32">
-            <div className="flex flex-col items-center pb-24">
+
+            <div className="flex flex-col items-center pb-32">
               <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
                 Participants' Grouping
               </h1>
             </div>
 
-            <div className="iframe-container mx-auto md:aspect-3/4 aspect-9/16 md:h-[70vw] w-100% rounded-3xl overflow-hidden" data-animate>
-              <iframe
-                src="https://drive.google.com/file/d/1Jlpeh4mvoXCnOuvs05DVuVuwc-kpDhRs/preview"
-                title="External Content Layout"
-                width="100%"
-                height="100%"
-                loading="eager"
-                sandbox="allow-scripts allow-same-origin"
-                style={{ border: 'none' }}
-              />
-            </div>
+            <GlowingEmbed embedUrl="https://drive.google.com/file/d/1Jlpeh4mvoXCnOuvs05DVuVuwc-kpDhRs/preview" aspect="md:aspect-3/4 aspect-9/16 md:h-[92vh] w-100%" />
+
           </div>
         </div>
 
