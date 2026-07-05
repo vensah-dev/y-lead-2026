@@ -150,7 +150,7 @@ export const BlowWindBlow = () => {
                 <div key={activityIndex}>
                   <SplitSection
                   left={
-                    <div className="relative h-[25vw] aspect-4/3">
+                    <div className="relative sm:h-[25vw] sm:w-full aspect-4/3">
                       <GlowingImage image={activity.image} />
                     </div>
                   }
