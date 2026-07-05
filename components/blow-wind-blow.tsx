@@ -4,7 +4,7 @@ import SplitSection from './split-section';
 import GlowingImage from './glowing-image';
 import type { StaticImageData } from 'next/image';
 
-import AWS from '@/public/images/BWB-locations/AWS.avif';
+import NTU from '@/public/images/BWB-locations/NTU.avif';
 import telokAyer from '@/public/images/BWB-locations/telok-ayer.avif';
 import EOS from '@/public/images/BWB-locations/EOS.avif';
 import nationalMueseum from '@/public/images/BWB-locations/national-mueseum.avif';
@@ -16,7 +16,7 @@ interface Activity {
   title: string;
   image: StaticImageData;
   description: string;
-  objectives: string[];
+  details: string[];
 }
 
 interface TrackData {
@@ -27,104 +27,104 @@ interface TrackData {
 export const BlowWindBlow = () => {
   const scheduleData: TrackData[] = [
     {
-      category: "ARTS & CULTURE",
+      category: "Arts & Culture",
       activities: [
         {
-          title: "Telok Ayer Trail",
+          title: "8th & 9th July: Telok Ayer Trail",
           image: telokAyer,
-          description: "The Telok Ayer district covers a long stretch that served as the landing site for early immigrants, leading to a concentration of religious buildings and Chinese clan associations along the street. The trail includes landmarks such as the Telok Ayer Chinese Methodist Church and Masjib Al-Abrar, which hold great cultural and historical significance in Singapore.",
-          objectives: [
-            "The cultural and historical significance of the landmarks in Telok Ayer",
-            "The architecture and design of buildings in Telok Ayer",
-            "How students can take action today to contribute meaningfully to preserving culture and tradition"
+          description: "Through the Telok Ayer Trail, participants will explore the rich culture and heritage of Singapore. Delve into how early Chinese immigrants arrived and established places of worship to find their identities and a sense of belonging. By exploring these hidden architectural gems, wall murals, and cultural landmarks, students will understand how history is preserved and be inspired to sustain a culture that Singaporeans are proud of.",
+          details: [
+            "09 40 - 11 00 (Self-guided) \n 11 00 - 12 00 (Guided Church Tour)",
+            "09 00",
+            "12 10"
           ]
-        }
+        },
       ]
     },
     {
-      category: "ENVIRONMENT & SUSTAINABILITY",
+      category: "Environment & Sustainability",
       activities: [
         {
-          title: "Earth Observatory Singapore",
+          title: "8th & 9th July: Earth Observatory Singapore",
           image: EOS,
-          description: "The Earth Observatory of Singapore (EOS) was created to conduct fundamental research on natural disasters and climate change, towards safer and more sustainable societies. EOS helps to build the social compact for Singapore to tackle the challenges of climate change and sustainability.",
-          objectives: [
-            "The role EOS plays in Singapore and the region’s environmental developments",
-            "The key skills youths should develop to support the environment",
-            "How students can take action today to contribute meaningfully to sustainability and the environment in Singapore"
+          description: "Participants will tour the Earth Observatory of Singapore (EOS) facilities, including hazard monitoring setups, sedimentation labs, and coral reef restoration labs. The program highlights how fundamental research in natural disasters and climate change supports Singapore’s green technologies, environmental regulations, and policymaking, while fostering youth environmental stewardship.",
+          details: [
+            "10 10 - 10 45 (Intro & Q&A) \n 10 45 - 11 45 (Facility/Lab Tour)",
+            "TBA",
+            "Dismissal: 11 45"
           ]
-        }
+        },
       ]
     },
     {
-      category: "REGIONAL & GLOBAL AFFAIRS",
+      category: "Regional & Global Affairs",
       activities: [
         {
           title: "8th July: National Museum",
           image: nationalMueseum,
-          description: "The investigative journey consists of two exhibits: Once Upon a Tide and Singapore Odyssea, both of which will allow participants to delve deeper into Singapore’s 700-year history. They will explore how the sea plays a crucial role in shaping Singapore’s evolution, and uncover the many connections that have positioned Singapore at the crossroads of the world.",
-          objectives: [
-            "Learning about Singapore’s early history and the contributions of settlers",
-            "Development and growth of Singapore as a trading port",
-            "Understanding Singapore’s connections with the world"
+          description: "An investigative journey through 4 key exhibition zones mapping out Singapore’s 700-year history and its road to globalisation. Participants will explore how the sea played a critical role in shaping Singapore's evolution as a trading hub, the efforts of our forefathers, and how modern youth can develop leadership skills to actively contribute to regional and global relations.",
+          details: [
+            "09 30 - 10 50 (Exhibit Exploration & Free Roam)",
+            "08 00",
+            "11 00"
           ]
         },
         {
           title: "9th July: Changi Airport Group",
           image: airport,
-          description: "The Changi Airport Group (CAG) manages Changi Airport and Seletar Airport, directing airport operations and air hub development, pioneering safe, secure and sustainable air hubs.",
-          objectives: [
-            "How Changi Airport builds global and regional connections",
-            "How flights and air travel are affected by geopolitical tensions",
-            "How Changi Airport has helped Singapore achieve its global standing."
+          description: "A seminar-style sharing designed to help participants learn about the regional and global ties that Changi Airport builds. Gain deep insights into how Changi expands its flight network to remain one of the world's largest and most competitive air hubs, handles strategic international relations, and navigates geopolitical dynamics.",
+          details: [
+            "10 30 - 11 30 (Seminar-style sharing)",
+            "09 00",
+            "11 40"
           ]
         }
       ]
     },
     {
-      category: "INNOVATION & AI",
+      category: "Innovation & AI",
       activities: [
         {
-          title: "8th July: Amazon Web Services",
-          image: AWS,
-          description: "Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering more than 200 fully featured services from data centers globally.",
-          objectives: [
-            "How new technologies and AI have impacted processes in AWS",
-            "How AWS is innovating and redeploying manpower to maximise productivity",
-            "How can youth take action to explore Innovation and AI"
+          title: "8th July: NTU, UOB Innovation Hub",
+          image: NTU,
+          description: "Exploring NTU Education Transformation: An inside look at innovation and AI frameworks in higher education. Participants will discover how NTU integrates AI into teaching and learning methodologies, explore the governance guiding AI development, and discuss how active classroom research can be seamlessly implemented in schools.",
+          details: [
+            "10 00 - 12 00 (Guided tour)",
+            "09 30",
+            "12 10"
           ]
         },
         {
           title: "9th July: Satellite Technology & Research (STAR) Centre",
           image: STAR,
-          description: "The Satellite Technology and Research (STAR) Centre supports the advancement of Singapore's space industry by providing the industry with state of the art satellite technology to meet the scientific and engineering challenges for future innovative satellite programmes and applications.",
-          objectives: [
-            "How new technologies and AI have impacted new satellite technology",
-            "How Singapore is innovating new satellites to stand out on the global front",
-            "How can youth take action to explore Innovation and AI in the field of satellite research"
+          description: "A guided tour around the STAR centre focusing on state-of-the-art innovations in satellite technology. As Singapore expands its presence in space, participants will explore how the nation develops cutting-edge technologies to stay competitive in the aerospace industry, inspiring youth to contribute to future scientific research and development.",
+          details: [
+            "10 30 - 11 30 (Guided tour & Q&A)",
+            "09 45",
+            "11 40"
           ]
         }
       ]
     },
     {
-      category: "SOCIAL COMPACT",
+      category: "Social Compact",
       activities: [
         {
-          title: "National Community Leadership Institute (under People’s Association)",
+          title: "8th & 9th July: National Community Leadership Institute (NACLI)",
           image: NCL,
-          description: "As the community leadership development arm of the PA, NACLI develops community leaders, and offers a wide range of leadership development programmes to equip people with the skills and competencies to carry out their work in the community effectively.",
-          objectives: [
-            "The role People's Association plays in building Singapore's social compact",
-            "The key skills youths should develop to support the building of Singapore's social fabric",
-            "How students can take action today to contribute meaningfully to Singapore's society"
+          description: "Focused on community leadership and Singapore's social fabric, this session teaches participants about the structures built to empower community leaders. Students will reflect on their personal leadership journeys, discover actionable pathways in social work, and learn how to make meaningful decisions that strengthen society.",
+          details: [
+            "10 00 - 12 00 (Guided tour by NACLI)",
+            "09 15",
+            "12 10"
           ]
-        }
+        },
       ]
     }
   ];
 
   return (
-    <div>
+    <section>
       <ScrollAnimation />
 
       <div className="w-screen bg-background-secondary">
@@ -143,7 +143,7 @@ export const BlowWindBlow = () => {
         <div key={index}>
           <div data-animate className={`${index == 0 ? "pb-32 pt-12":"py-32"} ${index % 2 === 0 ? "bg-background-secondary" : "bg-background-primary"}`}>
 
-            <h2 data-animate className="xl:text-6xl text-5xl font-display font-bold mb-24 max-w-7xl mx-auto px-8 capitalize">{track.category.toLowerCase()}</h2>
+            <h2 data-animate className="xl:text-6xl text-5xl font-display font-bold mb-24 max-w-7xl mx-auto px-8">{track.category}</h2>
 
             <div className="flex flex-col gap-16">
               {track.activities.map((activity, activityIndex) => (
@@ -156,17 +156,27 @@ export const BlowWindBlow = () => {
                   }
                   right={
                     <>
-                      <h3 className="xl:text-4xl text-3xl mb-6 font-display text-font-primary pt-8 font-bold" data-animate>{activity.title}</h3>
-                      <p className="text-font-primary" data-animate>{activity.description}</p>
+                      <h3 className="xl:text-4xl text-3xl mb-6 font-display text-font-primary font-bold" data-animate>{activity.title}</h3>
+                      <p className="text-font-primary whitespace-pre-line" data-animate>{activity.description + "\n\n"}</p>
             
                       <div data-animate>
-                        <h4 data-animate className="text-lg text-font-primary font-bold mt-4 mb-2">Objectives:</h4>
-                        <ul data-animate className="list-disc list-inside pl-6">
-                          {activity.objectives.map((objective, objectiveIndex) => (
-                            <li key={objectiveIndex} className="text-font-primary">
-                              {objective}
-                            </li>
-                          ))}
+                        <ul data-animate className="space-y-1">
+
+                          <li className="text-font-primary flex whitespace-pre-line">
+                            <p className="whitespace-pre-line font-bold">Duration:&nbsp;</p>
+                            {activity.details[0]}
+                          </li>
+
+                          <li className="text-font-primary flex whitespace-pre-line">
+                            <p className="whitespace-pre-line font-bold">Departure time:&nbsp;</p>
+                            {activity.details[1]}
+                          </li>
+
+                          <li className="text-font-primary flex whitespace-pre-line">
+                            <p className="whitespace-pre-line font-bold">Pickup time:&nbsp;</p>
+                            {activity.details[2]}
+                          </li>
+
                         </ul>
                       </div>
                     </>
@@ -180,6 +190,7 @@ export const BlowWindBlow = () => {
           </div>
         </div>
       ))}
-    </div>
+
+    </section>
   );
 };
