@@ -104,7 +104,7 @@ export default function Programmes() {
         { time: '08 00', activities: ['Morning Assembly'] },
         { time: '08 20', activities: ['Cross Winds', 'Group Time', 'Admin Briefing'] },
         { time: '12 40', activities: ['Lunch'] },
-        { time: '13 40', activities: ['Wind Breaker'] },
+        { time: '13 40', activities: ['Wind Sprint'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
         { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 40', activities: ['Dismissal'] },
@@ -144,7 +144,7 @@ export default function Programmes() {
           ]
         },
         { time: '12 40', activities: ['Lunch'] },
-        { time: '13 40', activities: ['Wind Breaker'] },
+        { time: '13 40', activities: ['Wind Sprint'] },
         { time: '16 20', activities: ['Y.Lead Display'] },
         { time: '17 20', activities: ['Admin Briefing', 'Debrief'] },
         { time: '17 40', activities: ['Dismissal'] },
@@ -156,7 +156,7 @@ export default function Programmes() {
       colour: "blue",
       times: [
         { time: '08 00', activities: ['Morning Assembly'] },
-        { time: '08 20', activities: ['Wind Breaker'] },
+        { time: '08 20', activities: ['Wind Sprint'] },
         { time: '11 20', activities: ['Lunch', 'Freshen up for Commencement'] },
         { time: '12 40', activities: ['Reflection', 'Group Time', 'Photobooth'] },
         { time: '14 20', activities: ['Commencement Celebration'] },
