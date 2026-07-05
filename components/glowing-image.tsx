@@ -13,12 +13,12 @@ const GlowingImage = (
   return (
     <div className="relative h-full w-full">
 
-      <div className="w-full h-full flex items-center justify-center blur-xl">
+      <div className="w-full h-full flex items-center justify-center blur-xl overflow-hidden rounded-3xl">
         <Image
           src={image}
           alt="Y.LEAD Logo Glow"
           fill
-          className="object-contain" 
+          className="object-cover rounded-3xl overflow-clip" 
         />
       </div>
 
@@ -27,7 +27,7 @@ const GlowingImage = (
           src={image}
           alt="Y.LEAD Logo"
           fill
-          className="object-contain"
+          className="object-cover rounded-3xl overflow-clip"
         />
       </div>
 
