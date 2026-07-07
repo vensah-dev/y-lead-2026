@@ -29,9 +29,11 @@ export function EmbedWithTitle(
   {
     title,
     href,
+    addGlowClassName,
   }:{
     title: string,
     href: string,
+    addGlowClassName?: string,
   }
   ){
 
@@ -40,7 +42,7 @@ export function EmbedWithTitle(
 
 
       <div className="z-0">
-        <GlowingEmbed embedUrl={href} />
+        <GlowingEmbed embedUrl={href} glowBrightness={addGlowClassName || ""} />
       </div>
 
       <div className="flex flex-col items-center pt-12">
@@ -72,7 +74,7 @@ export default function Media() {
 
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"/>
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3"/>
-          <EmbedWithTitle title="L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh"/>
+          <EmbedWithTitle title="L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh" addGlowClassName="brightness-75"/>
           <EmbedWithTitle title="A+D Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru"/>
 
         </div>
