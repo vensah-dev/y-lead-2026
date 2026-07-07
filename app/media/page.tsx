@@ -82,9 +82,9 @@ export default function Media() {
             <EmbedWithTitle title="Leadership Challenge Allocations" href="https://docs.google.com/document/d/1EMmNyCugEi2zSNOzWeUpaaLrGUSoDAbefGTvy8HKjDk/edit?tab=t.rhtkb88bldxy" addGlowClassName="brightness-80" aspect="md:aspect-video aspect-9/16"/>
 
           </div>
-          <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/y-lead-2026-wind-chimes-d4g5k7hp1cmok33g" addGlowClassName="brightness-75" aspect="md:aspect-square aspect-9/16"/>
+          <EmbedWithTitle title="Wind Chimes Padlet" href="https://padlet.com/phoebe_tan_en_minn/y-lead-2026-wind-chimes-d4g5k7hp1cmok33g" addGlowClassName="brightness-75" aspect="md:aspect-square aspect-9/16"/>
           <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh" addGlowClassName="brightness-75" aspect="md:aspect-square aspect-9/16"/>
-          <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru" aspect="md:aspect-square aspect-9/16"/>
+          <EmbedWithTitle title="Collaborative Inquiry A+D Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru" aspect="md:aspect-square aspect-9/16"/>
 
           <EmbedWithTitle title="Y.LEAD Music Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0" aspect="md:aspect-square aspect-9/16"/>
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3" aspect="md:aspect-square aspect-9/16"/>
