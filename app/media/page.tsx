@@ -50,7 +50,7 @@ export function EmbedWithTitle(
       <div className="flex flex-col items-center pt-12">
         <Link data-animate className="text font-display xl:text-4xl text-3xl max-sm:text-2xl font-bold hover:text-font-primary/50 text-center w-full underline"
         href={href}>
-          {title}
+          {"🔗 "+title}
         </Link>
       </div>
 
