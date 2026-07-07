@@ -6,19 +6,21 @@ const GlowingImage = (
   {
     image,
     glow = 0.0,
+    rounded,
   }:{
     image: StaticImageData,
     glow?: number,
+    rounded?: string,
   }) => {
   return (
     <div className="relative h-full w-full">
 
-      <div className="w-full h-full flex items-center justify-center blur-xl overflow-hidden rounded-3xl">
+      <div className={`w-full h-full flex items-center justify-center blur-2xl overflow-hidden rounded-3xl ${rounded}`}>
         <Image
           src={image}
           alt="Y.LEAD Logo Glow"
           fill
-          className="object-cover rounded-3xl overflow-clip" 
+          className={`object-cover rounded-3xl overflow-clip ${rounded}`} 
         />
       </div>
 
@@ -27,7 +29,7 @@ const GlowingImage = (
           src={image}
           alt="Y.LEAD Logo"
           fill
-          className="object-cover rounded-3xl overflow-clip"
+          className={`object-cover rounded-3xl overflow-clip ${rounded}`} 
         />
       </div>
 

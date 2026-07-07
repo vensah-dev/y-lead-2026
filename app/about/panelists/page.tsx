@@ -12,6 +12,7 @@ import SplitSection from "@/components/split-section";
 import { panelistData } from "@/lib/panelist-data";
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import GlowingImage from '@/components/glowing-image';
 
 export default function AboutPanelists() {
   return (
@@ -32,14 +33,9 @@ export default function AboutPanelists() {
 
                   <SplitSection
                     left={
-                      <div className="relative w-[20vw] max-md:w-full aspect-square rounded-full overflow-hidden">
-                        <Image
-                          src={data.image}
-                          alt={data.name}
-                          fill
-                          className="object-cover drop-shadow-[0_0px_50px_rgba(0,0,0,1)] drop-shadow-font-primary/7 rounded-full overflow-hidden"
-                        />
-                      </div>
+                    <div className="relative h-[20vw] aspect-square">
+                      <GlowingImage image={data.image} rounded='rounded-full'/>
+                    </div>
                     }
                     right={
 

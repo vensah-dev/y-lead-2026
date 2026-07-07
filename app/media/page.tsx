@@ -46,7 +46,7 @@ export function EmbedWithTitle(
       </div>
 
       <div className="flex flex-col items-center pt-12">
-        <Link data-animate className="text font-display xl:text-5xl text-4xl max-sm:text-3xl font-bold hover:text-font-primary/50 text-center w-full underline"
+        <Link data-animate className="text font-display xl:text-4xl text-3xl max-sm:text-2xl font-bold hover:text-font-primary/50 text-center w-full underline"
         href={href}>
           {title}
         </Link>
@@ -70,12 +70,16 @@ export default function Media() {
           Media
         </h1>
 
-        <div className="max-w-7xl px-8 mx-auto py-32 grid grid-cols-2 max-md:grid-cols-1 gap-48">
+        <div className="max-w-7xl px-8 mx-auto py-32 grid grid-cols-2 max-md:grid-cols-1 gap-y-60 gap-x-32">
 
-          <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"/>
+          <div className="col-span-2">
+            <EmbedWithTitle title="Y.LEAD Music Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"/>
+          </div>
+
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3"/>
-          <EmbedWithTitle title="L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh" addGlowClassName="brightness-75"/>
-          <EmbedWithTitle title="A+D Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru"/>
+          <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/y-lead-2026-wind-chimes-d4g5k7hp1cmok33g" addGlowClassName="brightness-75"/>
+          <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh" addGlowClassName="brightness-75"/>
+          <EmbedWithTitle title="Collaborative Inquiry L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru"/>
 
         </div>
 

@@ -22,6 +22,7 @@ import { PrimaryButton } from './primary-button';
 import { SecondaryButton } from './secondary-button';
 
 import { panelistData } from "@/lib/panelist-data";
+import GlowingImage from './glowing-image';
 
 export const Panelists = () => {
 
@@ -98,17 +99,10 @@ export const Panelists = () => {
                 return (
                   <div data-animate key={index} className={`flex items-center gap-[6vw] justify-start ${isLoneLastElement ? "md:col-span-2 md:justify-center md:mx-auto md:max-w-xl" : ""}`}>
 
-                    {/* Image Wrapper */}
-                    <div className="relative h-[12vw] min-h-[100px] max-h-[200px] aspect-square rounded-full overflow-hidden shrink-0">
-                      <Image
-                        src={data.image}
-                        alt="panelist"
-                        fill
-                        className="object-cover"
-                      />
+                    <div className="relative h-[12vw] aspect-square">
+                      <GlowingImage image={data.image} rounded='rounded-full'/>
                     </div>
 
-                    {/* Text Wrapper */}
                     <div className={`flex flex-col items-start min-w-0 ${isLoneLastElement ? "w-auto" : "w-[calc(100%-6vw-12vw)]"}`} >
                       <h1 
                         className="font-display xl:text-5xl text-4xl max-sm:text-3xl xl:mb-6 mb-4 max-sm:mb-2 font-bold text-font-primary text-balance"
