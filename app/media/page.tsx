@@ -24,6 +24,8 @@ import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 import GlowingEmbed from "@/components/glowing-embed";
 import Link from "next/link";
+import { RiLinkM } from "react-icons/ri";
+
 
 export function EmbedWithTitle(
   {
@@ -48,9 +50,10 @@ export function EmbedWithTitle(
       </div>
 
       <div className="flex flex-col items-center pt-12">
-        <Link data-animate className="text font-display xl:text-4xl text-3xl max-sm:text-2xl font-bold hover:text-font-primary/50 text-center w-full underline"
+        <Link data-animate className="flex gap-3 xl:text-3xl text-3xl max-sm:text-2xl font-bold hover:text-font-primary/50 text-center w-full underline"
         href={href}>
-          {"🔗 "+title}
+          <div className="inline"><RiLinkM/></div>
+          {title}
         </Link>
       </div>
 
