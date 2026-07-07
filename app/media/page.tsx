@@ -68,7 +68,7 @@ export default function Media() {
           Media
         </h1>
 
-        <div className="md:max-w-7xl w-full px-8 mx-auto py-32 grid grid-cols-2 max-md:grid-cols-1 gap-48">
+        <div className="max-w-7xl px-8 mx-auto py-32 grid grid-cols-2 max-md:grid-cols-1 gap-48">
 
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"/>
           <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3"/>
