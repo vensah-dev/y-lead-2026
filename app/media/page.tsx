@@ -50,9 +50,9 @@ export function EmbedWithTitle(
       </div>
 
       <div className="flex flex-col items-center pt-12">
-        <Link data-animate className="flex gap-3 xl:text-3xl text-3xl max-sm:text-2xl font-bold hover:text-font-primary/50 text-center w-full underline"
+        <Link data-animate className="flex items-center gap-2 xl:text-3xl text-2xl max-sm:text-xl font-bold hover:text-font-primary/50 text-center w-full underline"
         href={href}>
-          <div className="inline"><RiLinkM/></div>
+          <div className="h-100%"><RiLinkM/></div>
           {title}
         </Link>
       </div>
