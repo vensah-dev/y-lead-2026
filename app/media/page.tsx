@@ -23,6 +23,35 @@ import { ScrollAnimation } from "@/components/scroll-animation";
 import SplitSection from "@/components/split-section";
 import GlowingImage from "@/components/glowing-image";
 import GlowingEmbed from "@/components/glowing-embed";
+import Link from "next/link";
+
+export function EmbedWithTitle(
+  {
+    title,
+    href,
+  }:{
+    title: string,
+    href: string,
+  }
+  ){
+
+  return(
+    <div>
+
+
+      <div className="z-0">
+        <GlowingEmbed embedUrl={href} />
+      </div>
+
+      <div className="flex flex-col items-center pt-12">
+        <Link data-animate className="text font-display xl:text-5xl text-4xl max-sm:text-3xl font-bold hover:text-font-primary/50 text-center w-full underline"
+        href={href}>
+          {title}
+        </Link>
+      </div>
+    </div>
+  )
+}
 
 export default function Media() {
 
@@ -31,47 +60,25 @@ export default function Media() {
       <ScrollAnimation />
       <Navbar/>
 
-      <div className="w-screen">
-        {/* <h1 data-animate className="max-w-7xl px-8 mx-auto text-7xl text-center text-font-primary font-display font-bold py-2.5 pb-32">Media</h1> */}
-        
-        <div className="w-screen bg-background-primary">
-          <div className="md:max-w-7xl w-full px-8 mx-auto py-32 flex flex-col gap-48">
+      {/* <h1 data-animate className="max-w-7xl px-8 mx-auto text-7xl text-center text-font-primary font-display font-bold py-2.5 pb-32">Media</h1> */}
+      
+      <div className="w-screen bg-background-primary">
 
-            <div>
-              <div className="flex flex-col items-center pb-24">
-                <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
-                  Y.LEAD Storyline Video
-                </h1>
-              </div>
-              <GlowingEmbed embedUrl="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3" />
-            </div>
+        <h1 className="xl:text-7xl text-6xl max-sm:text-5xl font-bold text-center py-32 font-display">
+          Media
+        </h1>
 
-            <div>
-              <div className="flex flex-col items-center pb-24">
-                <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
-                  L+E Padlet
-                </h1>
-              </div>
-              <GlowingEmbed embedUrl="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh" />
-            </div>
+        <div className="md:max-w-7xl w-full px-8 mx-auto py-32 grid grid-cols-2 gap-48">
 
-            <div>
-              <div className="flex flex-col items-center pb-24">
-                <h1 data-animate className="font-display xl:text-7xl text-6xl max-sm:text-5xl font-bold text-font-primar text-center w-full">
-                  A+D Padlet
-                </h1>
-              </div>
-              <GlowingEmbed embedUrl="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru" />
-            </div>
+          <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/DZLfYOHS7zw?si=pRAk2kAK45Ik-RoG&amp;controls=0"/>
+          <EmbedWithTitle title="Y.LEAD Storyline Video" href="https://www.youtube.com/embed/8c31JGhz_n0?si=QyAT-LpRoO2quYU3"/>
+          <EmbedWithTitle title="L+E Padlet" href="https://padlet.com/phoebe_tan_en_minn/l-e-y-lead-2026-collaborative-inquiry-ajb2ixnua615vpkh"/>
+          <EmbedWithTitle title="A+D Padlet" href="https://padlet.com/phoebe_tan_en_minn/a-d-y-lead-2026-collaborative-inquiry-i98oa4sxk37p4sru"/>
 
-            {/* <div className="w-fit mx-auto pt-24">
-              <PrimaryButton text="More videos" href="/media"/>
-            </div> */}
-
-          </div>
         </div>
 
       </div>
+
 
       {/* footer */}
       <Footer />

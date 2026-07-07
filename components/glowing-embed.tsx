@@ -12,7 +12,7 @@ const GlowingEmbed = (
   }) => {
   return (
     <div className={`relative ${aspect || "aspect-video w-full"} mx-auto`}> 
-      <div className={`absolute z-0 iframe-container mx-auto ${aspect || "aspect-video w-full"} rounded-3xl overflow-hidden blur-2xl pointer-events-none`} data-animate>
+      <div className={`absolute z-0 iframe-container mx-auto ${aspect || "aspect-video w-full"} rounded-2xl overflow-hidden blur-3xl pointer-events-none`} data-animate>
         <iframe
           src={embedUrl}
           title="External Content Layout"
