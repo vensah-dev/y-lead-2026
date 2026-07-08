@@ -73,7 +73,7 @@ export default function Media() {
       <div className="w-screen bg-background-primary">
 
         <h1 className="xl:text-7xl text-6xl max-sm:text-5xl font-bold text-center md:py-32 pt-32 font-display">
-          Media
+          Resources
         </h1>
 
         <div className="max-w-7xl px-8 mx-auto py-32 grid grid-cols-2 max-md:grid-cols-1 md:gap-y-60 gap-y-56 md:gap-x-32">
