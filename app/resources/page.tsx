@@ -82,7 +82,7 @@ export default function Media() {
             <EmbedWithTitle title="Leadership Challenge Allocations" href="https://docs.google.com/document/d/1EMmNyCugEi2zSNOzWeUpaaLrGUSoDAbefGTvy8HKjDk/edit?tab=t.rhtkb88bldxy" addGlowClassName="brightness-80" aspect="md:aspect-video aspect-9/16"/>
 
           </div>
-          <EmbedWithTitle title="LC Pitching" href="https://docs.google.com/document/d/1ELkESsncosd_Ot8G3GWJieu9mDmlv21i2-1Jnee2i-k/edit?usp=sharing" aspect="md:aspect-video aspect-9/16"/>
+          <EmbedWithTitle title="LC Pitching Rubrics" href="https://docs.google.com/document/d/1ELkESsncosd_Ot8G3GWJieu9mDmlv21i2-1Jnee2i-k/edit?usp=sharing" aspect="md:aspect-video aspect-9/16"/>
           <EmbedWithTitle title="LC Rapid Fire Rubrics" href="https://docs.google.com/document/d/101H2QhAAgO5pNPMDgHa50eNTcWdaxC9VeSGFtZNvQEk/edit?usp=sharing" addGlowClassName="brightness-80" aspect="md:aspect-video aspect-9/16"/>
 
           <EmbedWithTitle title="Wind Chimes Padlet" href="https://padlet.com/phoebe_tan_en_minn/y-lead-2026-wind-chimes-d4g5k7hp1cmok33g" addGlowClassName="brightness-75" aspect="md:aspect-square aspect-9/16"/>
