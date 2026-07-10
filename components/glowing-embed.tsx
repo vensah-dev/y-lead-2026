@@ -20,7 +20,7 @@ const GlowingEmbed = (
           title="External Content Layout"
           width="100%"
           height="100%"
-          loading="lazy"
+          loading="eager"
           sandbox="allow-scripts allow-same-origin"
           style={{ border: 'none' }}
         />
