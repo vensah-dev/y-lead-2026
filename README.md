@@ -7,10 +7,11 @@ I have tried to make it as engaging as possible by increasing interactability th
 - searchable cheers
 - custom emoji backgrounds
 - animations
+- embedded worksheets and external documents
 
-I have also had to optimise certain thing such as images by compressing or converting to AVIF/WebP and other mroe efficient file formats. I had also painstaikingly done responsiveness all by hand.
+I have also had to optimise certain thing such as images by compressing or converting to AVIF. I had also painstaikingly done responsiveness all by hand.
 
-Some components like the timeline component and all the data in lists or .js files were converted from pdf/png files into lists by Gemini. Some imports were done via local models like Qwen 3.5 30B:A3b (over kill i know).
+Some components like the timeline component and all the data in lists or .js files were converted from pdf/png files into lists by Gemini.
 
 ## screenshots
 
