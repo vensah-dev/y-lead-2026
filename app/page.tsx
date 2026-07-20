@@ -55,7 +55,8 @@ export default function Home() {
                 className="
                 font-display text-center w-full 
                 text-[20vw] max-lg:portrait:text-[37vw] 
-                font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards]"
+                opacity-0
+                font-bold text-accent-primary mb-3 leading-[1.15] animate-[fade-in-up_0.6s_ease-out_forwards_0.3s]"
               >
                 Y.LEAD 2026
               </h1>
