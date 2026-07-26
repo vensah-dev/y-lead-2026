@@ -1,5 +1,7 @@
 # Y.LEAD 2026 Website
 
+Technically my first every production website lol ☠️
+
 The website for Y.LEAD 2026, a 4 day leadership camp hosted by River Valley High School Singapore.
 The website details the different info that participants and facilitators would have to access.
 I have tried to make it as engaging as possible by increasing interactability through UI components like:
